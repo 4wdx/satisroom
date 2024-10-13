@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41634318230e468d66338a759329ecf9, type: 3}
+  m_Name: Equipment_Charm
+  m_EditorClassIdentifier:
+  ID: 11
+  Icon: {fileID: 21300000, guid: fc661f83ba178d6438b006d6fcb52dfe, type: 2}
+  PetItemSlotType: 2
+  EquipmentSprite: {fileID: 21300000, guid: f0d21db4ed8e791469496d1913d45cb9, type: 2}
+  EquipmentLocalPosition: {x: -0.362, y: 0.598, z: 0}
+  EquipmentLocalEulerAngles: {x: 0, y: 0, z: 0}
+  Price: 30

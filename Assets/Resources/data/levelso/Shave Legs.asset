@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ef5b20cc3dc1f4027025e10f207c25, type: 3}
+  m_Name: Shave Legs
+  m_EditorClassIdentifier:
+  ID: 13
+  Icon: {fileID: 21300000, guid: 02cb228ef02d01641b41132d91281223, type: 2}
+  SceneReference:
+    asset: {fileID: 0}
+    guid: de156c7e32675ae45966f6543abf019d
+  HintPrefab: {fileID: 1951296670169130, guid: 00b01c46bb1569d49be0c8845733ad17, type: 2}
+  ImageWin: {fileID: 21300000, guid: 3b209ea87b850bd4daf7a8cb3235557e, type: 2}
+  ImageLose: {fileID: 21300000, guid: 54d02183858a05041bfe6d6505b2bdfa, type: 2}
+  Mode: 1
+  GameEvent: 0

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ef5b20cc3dc1f4027025e10f207c25, type: 3}
+  m_Name: Cleaning Griller
+  m_EditorClassIdentifier:
+  ID: 32
+  Icon: {fileID: 21300000, guid: 6a2ab1ad625d95548aca527481d74b96, type: 2}
+  SceneReference:
+    asset: {fileID: 0}
+    guid: a7e64293c5768064390db0725b4223c4
+  HintPrefab: {fileID: 1852253339074773, guid: 2acc887501b652b4d9f4f19a624a0079, type: 2}
+  ImageWin: {fileID: 21300000, guid: dc28c48a6ae42bd47a9669853de879f5, type: 2}
+  ImageLose: {fileID: 21300000, guid: bf186a17e3829e64bacd02509ec5434f, type: 2}
+  Mode: 1
+  GameEvent: 0

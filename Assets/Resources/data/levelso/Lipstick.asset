@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ef5b20cc3dc1f4027025e10f207c25, type: 3}
+  m_Name: Lipstick
+  m_EditorClassIdentifier:
+  ID: 41
+  Icon: {fileID: 21300000, guid: 08035425e5a6bb3418ad08e1bd450962, type: 2}
+  SceneReference:
+    asset: {fileID: 0}
+    guid: 08376f7596a0a754485bb54b539d63ae
+  HintPrefab: {fileID: 1638199017051040, guid: 36f19a8dfefe13b4aaaa3ff9be3c607c, type: 2}
+  ImageWin: {fileID: 21300000, guid: 9621fb836dff7504a8b445db8febb45e, type: 2}
+  ImageLose: {fileID: 21300000, guid: f233556f3eb1ddb458433abcf03c07ee, type: 2}
+  Mode: 1
+  GameEvent: 1

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ef5b20cc3dc1f4027025e10f207c25, type: 3}
+  m_Name: Birthday
+  m_EditorClassIdentifier:
+  ID: 20
+  Icon: {fileID: 21300000, guid: dc66ccf0337c2594895e51857d09e5cd, type: 2}
+  SceneReference:
+    asset: {fileID: 0}
+    guid: f1de3ea9377ae954cb698f5173d434c0
+  HintPrefab: {fileID: 1649003873496796, guid: 7e4b5b670f389dd4db72c927c87edcc4, type: 2}
+  ImageWin: {fileID: 21300000, guid: 51cad4f3065f3a9449a01ecd84f4cb3c, type: 2}
+  ImageLose: {fileID: 21300000, guid: 66627bd2d4c2f644bb707f1f30a4ae9f, type: 2}
+  Mode: 0
+  GameEvent: 0

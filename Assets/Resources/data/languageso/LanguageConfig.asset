@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380cfde7dd1c071faa2efa0c66cf0d5f, type: 3}
+  m_Name: LanguageConfig
+  m_EditorClassIdentifier:
+  LanguageDatas:
+  - Text: English
+    Image: {fileID: 21300000, guid: 279cba7eb0cee1d4b988f1bd68a63afb, type: 2}
+    Language: 10
+  - Text: Vietnamese
+    Image: {fileID: 21300000, guid: d0227191469114b41b4f0c8ac4e7652a, type: 2}
+    Language: 39
+  - Text: Japanese
+    Image: {fileID: 21300000, guid: 46066b7643c78454cad6f93239ea3cb9, type: 2}
+    Language: 22
+  - Text: Korean
+    Image: {fileID: 21300000, guid: 098e4ffbc5d84ee479648624ba77be6e, type: 2}
+    Language: 23
+  - Text: Chinese
+    Image: {fileID: 21300000, guid: e6935f2ed025c28448cb14496e09d864, type: 2}
+    Language: 6
+  - Text: Spanish
+    Image: {fileID: 21300000, guid: 345f8f52c5d57414fb2c46c36c08a902, type: 2}
+    Language: 34
+  - Text: Portuguese
+    Image: {fileID: 21300000, guid: 8d8d006d281b02444a97670707db9455, type: 2}
+    Language: 28
+  - Text: Italian
+    Image: {fileID: 21300000, guid: 4421cb11dd0207749a8a8a3c8f9e811e, type: 2}
+    Language: 21
+  - Text: German
+    Image: {fileID: 21300000, guid: 4c823b63d3d93574c962a17ddb8d6c41, type: 2}
+    Language: 15
+  - Text: French
+    Image: {fileID: 21300000, guid: e9c7871399677344694d080fd6a31c7e, type: 2}
+    Language: 14
+  - Text: Russian
+    Image: {fileID: 21300000, guid: 1bbd7cca4c1d80b479f9ffa0e07019c5, type: 2}
+    Language: 30

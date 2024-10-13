@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ef5b20cc3dc1f4027025e10f207c25, type: 3}
+  m_Name: Clean ear
+  m_EditorClassIdentifier:
+  ID: 8
+  Icon: {fileID: 21300000, guid: 2467273d5a44b954f95f496c67cf3c2b, type: 2}
+  SceneReference:
+    asset: {fileID: 0}
+    guid: 9cd72030c8b0b084ea7b4de6e18dec2e
+  HintPrefab: {fileID: 1398436767519422, guid: acf23391ba1e5784ebee63d6563e9eeb, type: 2}
+  ImageWin: {fileID: 21300000, guid: cf90ac304d2052a49ad4752e3edf14e4, type: 2}
+  ImageLose: {fileID: 21300000, guid: 171866b96be5da245959253f798e41f7, type: 2}
+  Mode: 1
+  GameEvent: 0

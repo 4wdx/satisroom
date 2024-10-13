@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ef5b20cc3dc1f4027025e10f207c25, type: 3}
+  m_Name: Organize Wardrobe
+  m_EditorClassIdentifier:
+  ID: 10
+  Icon: {fileID: 21300000, guid: f421e57916f2c594eaab3a7941aeb8fe, type: 2}
+  SceneReference:
+    asset: {fileID: 0}
+    guid: 492a05b65c2e3ed44b445a7acbb4a636
+  HintPrefab: {fileID: 1159954662232599, guid: f5bd2709a473dea42954bc489d5525a0, type: 2}
+  ImageWin: {fileID: 21300000, guid: d3d8be1d4a703f44c999621e117db3fd, type: 2}
+  ImageLose: {fileID: 21300000, guid: f4794eeea0ac12147851cf4144f67758, type: 2}
+  Mode: 0
+  GameEvent: 0

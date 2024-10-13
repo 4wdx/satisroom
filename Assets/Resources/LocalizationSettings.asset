@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d63d99904c5037c63069ee312753c5, type: 3}
+  m_Name: LocalizationSettings
+  m_EditorClassIdentifier:
+  TableId: 1WuOxKMuX9FdhCcsBAiup_rzCMHNpYAiAc2Mwptmyy0s
+  Sheets:
+  - Name: Main
+    Id: 0
+    TextAsset: {fileID: 4900000, guid: 31cd560852c8ac64aa4852a0880c3314, type: 3}
+  - Name: Hint
+    Id: 268905189
+    TextAsset: {fileID: 4900000, guid: cd5072ebe56afe64bbff045844dfdeb7, type: 3}
+  SaveFolder: {fileID: 0}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ef5b20cc3dc1f4027025e10f207c25, type: 3}
+  m_Name: Clean Bathroom
+  m_EditorClassIdentifier:
+  ID: 11
+  Icon: {fileID: 21300000, guid: 30f6a50c2d4a70a46ac1a99aefc4826a, type: 2}
+  SceneReference:
+    asset: {fileID: 0}
+    guid: e35667eae898d6d4e9a391a4003e15da
+  HintPrefab: {fileID: 1830394898607148, guid: 00fee9a14ff571641bfb272936af6dff, type: 2}
+  ImageWin: {fileID: 21300000, guid: 4e286a427d7a86a4fa92d165ba7ba523, type: 2}
+  ImageLose: {fileID: 21300000, guid: d244faaa3ca3e9249b46f0227c4087a6, type: 2}
+  Mode: 0
+  GameEvent: 0

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ef5b20cc3dc1f4027025e10f207c25, type: 3}
+  m_Name: LadyInChaos
+  m_EditorClassIdentifier:
+  ID: 35
+  Icon: {fileID: 21300000, guid: 5a55fc5e80269d049b2cee0a0ac28524, type: 2}
+  SceneReference:
+    asset: {fileID: 0}
+    guid: d7948ff3da6ffce4aa026a662be435ce
+  HintPrefab: {fileID: 1690988277471879, guid: 76a5e2f117346a445930306b45dc1adb, type: 2}
+  ImageWin: {fileID: 21300000, guid: a39e9b6fa67a7094699b51ff9ce4a9bb, type: 2}
+  ImageLose: {fileID: 21300000, guid: 40c4d36cb4da6b54f935881e937ebc94, type: 2}
+  Mode: 0
+  GameEvent: 0

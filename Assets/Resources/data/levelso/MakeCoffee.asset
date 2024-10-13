@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ef5b20cc3dc1f4027025e10f207c25, type: 3}
+  m_Name: MakeCoffee
+  m_EditorClassIdentifier:
+  ID: 18
+  Icon: {fileID: 21300000, guid: 03ca818b230565a48a398a0f35528065, type: 2}
+  SceneReference:
+    asset: {fileID: 0}
+    guid: 0594d297b8ec29e45a5cedbf89e7fb94
+  HintPrefab: {fileID: 1300570786028319, guid: b6c62013a111143458e03920a4d274f8, type: 2}
+  ImageWin: {fileID: 21300000, guid: 837bb8f606c77344085566f2f8554bff, type: 2}
+  ImageLose: {fileID: 21300000, guid: 867a984557b2afa4da77a07b51c773d3, type: 2}
+  Mode: 0
+  GameEvent: 0

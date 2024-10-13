@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad20e835673b5db360a80bd979afe6f5, type: 3}
+  m_Name: Equipment_BagFlower
+  m_EditorClassIdentifier:
+  ID: 4
+  Icon: {fileID: 21300000, guid: 25f206b44cb6f994189fb915321f9ecd, type: 2}
+  PetItemSlotType: 3
+  EquipmentSprite: {fileID: 21300000, guid: 8002f74e4f9e134458fb0060e4fc22fc, type: 2}
+  EquipmentLocalPosition: {x: -0.772, y: -1.267, z: 0}
+  EquipmentLocalEulerAngles: {x: 0, y: 0, z: 0}
+  Level: {fileID: 11400000, guid: 7d20de10201f53b448df053399f9065a, type: 2}
