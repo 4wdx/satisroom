@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace CodeBase.Gameplay.Mechanics.Root
+namespace CodeBase.Gameplay.Mechanics
 {
     public abstract class ItemSlot : MonoBehaviour
     {

@@ -24,11 +24,8 @@ namespace CodeBase.Gameplay.Levels
         {
             _completedCount++;
 
-            if (_completedCount == _slots.Length)
-            {
+            if (_completedCount == _slots.Length) 
                 OnCompleted?.Invoke(true);
-                print("completed");
-            }
         }
     }
 }

@@ -1,8 +1,7 @@
 ﻿using System;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace CodeBase.Gameplay.Mechanics.Root
+namespace CodeBase.Gameplay.Mechanics
 {
     public class DragableObject : MonoBehaviour
     {
@@ -23,6 +22,8 @@ namespace CodeBase.Gameplay.Mechanics.Root
 
         private void OnDestroy()
         {
+            if (_itemModificators == null) return;
+            
             foreach (var itemModificator in _itemModificators) 
                 itemModificator.Dispose();
         }

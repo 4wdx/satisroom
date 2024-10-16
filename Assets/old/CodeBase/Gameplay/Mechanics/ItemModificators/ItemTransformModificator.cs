@@ -10,7 +10,6 @@ namespace CodeBase.Gameplay.Mechanics
         [Header("Base Values")]
         [SerializeField] private Vector3 _baseRotation;
         [SerializeField] private Vector3 _baseScale;
-        [SerializeField] private bool _autoSet;
         
         [Header("On Drag Values")]
         [SerializeField] private Vector3 _targetRotation;

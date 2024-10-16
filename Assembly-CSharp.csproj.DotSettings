@@ -9,5 +9,10 @@
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005Cold_005Cassets_005Csatisroom_005Ccodebase_005Cgameplay_005Cmechanics_005Cslots_005Cboxslotvisual/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005Cold_005Cassets_005Csatisroom_005Ccodebase_005Cgameplay_005Croot_005Cexithandle/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005Cold_005Ccodebase_005Cgameplay_005Cmechanics_005Citemmodificators/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005Cold_005Ccodebase_005Cgameplay_005Cmechanics_005Cother/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005Cold_005Ccodebase_005Cgameplay_005Cmechanics_005Croot/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005Cold_005Ccodebase_005Cgameplay_005Cmechanics_005Cslots/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005Cold_005Ccodebase_005Cgameplay_005Cmechanics_005Cslots_005Cslotvisual/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005Cold_005Ccodebase_005Cgameplay_005Cmechanics_005Ctaskmodificators/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005Cold_005Ccodebase_005Cgameplay_005Cmechanics_005Ctasks/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/CodeInspection/NamespaceProvider/NamespaceFoldersToSkip/=assets_005Cold_005Ccodebase_005Cgameplay_005Croot_005Cexithandle/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

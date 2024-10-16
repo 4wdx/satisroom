@@ -3,9 +3,9 @@ using System.Collections;
 using CodeBase.Gameplay.Mechanics.Root;
 using UnityEngine;
 
-namespace CodeBase.Gameplay.Mechanics.Slots
+namespace CodeBase.Gameplay.Mechanics
 {
-    public class BoxSlot : ItemSlot
+    public class BoxSlot : ItemSlot, IClickable
     {
         public override event Action OnCompleted;
         public event Action<bool> OnStateChanged; 
@@ -15,21 +15,13 @@ namespace CodeBase.Gameplay.Mechanics.Slots
         private int _completedCount;
         private bool _completed;
         private bool _isOpened;
-
-        private void Update()
+        
+        public void Click()
         {
             if (_completed) return;
             
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                Collider2D collider = Physics2D.OverlapPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-                
-                if (collider != null && collider.gameObject == gameObject)
-                {
-                    _isOpened = !_isOpened;
-                    OnStateChanged?.Invoke(_isOpened);
-                }
-            }
+            _isOpened = !_isOpened;
+            OnStateChanged?.Invoke(_isOpened);
         }
 
         public override void ContainsItem(DragableObject dragableObject) => 

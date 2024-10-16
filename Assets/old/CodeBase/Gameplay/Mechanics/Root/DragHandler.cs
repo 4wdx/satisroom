@@ -1,42 +1,84 @@
-﻿using CodeBase.Utils;
+﻿using System;
+using CodeBase.Utils;
 using UnityEngine;
+using UnityEngine.Serialization;
 using YG;
 
-namespace CodeBase.Gameplay.Mechanics.Root
+namespace CodeBase.Gameplay.Mechanics
 {
     public class DragHandler : MonoBehaviour
     {
-        [SerializeField] private LayerMask _dragableLayer;
+        public static DragHandler Instance { get; private set; }
+        public event Action OnDamagedClick;
+
+        [SerializeField] private LayerMask[] _layerPriorityOrder;
         
         private Vector3 MousePosition => 
             new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
-            Camera.main.ScreenToWorldPoint(Input.mousePosition).y, 0);
+            Camera.main.ScreenToWorldPoint(Input.mousePosition).y, _zPos);
         
         private DragableObject _dragableObject;
-        
-        private void Update()
+        private float _zPos;
+
+        private void Awake()
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0)) StartDrag();
-
-            if (Input.GetKey(KeyCode.Mouse0)) Drag();
-
-            if (Input.GetKeyUp(KeyCode.Mouse0)) EndDrag();
+            if (Instance == null)
+                Instance = this;
+            else 
+                Destroy(this);
         }
 
-        private void StartDrag()
+        public void CancelDrag()
         {
-            var collider = Physics2D.OverlapPoint(MousePosition, _dragableLayer);
-            if (collider == null) return;
+            if (_dragableObject == null) return;
+            
+            _dragableObject = null;
+        }
 
-            if (collider.TryGetComponent(out DragableObject obj))
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0)) OnStartHandle();
+
+            if (Input.GetKey(KeyCode.Mouse0)) InProgressHandle();
+
+            if (Input.GetKeyUp(KeyCode.Mouse0)) OnEndHandle();
+        }
+
+        private void OnStartHandle()
+        {
+            foreach (LayerMask mask in _layerPriorityOrder)
             {
-                _dragableObject = obj;
-                _dragableObject.transform.position = MousePosition;
-                _dragableObject.StartDrag();
+                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition),
+                    Vector2.zero,  Mathf.Infinity, mask);
+                
+                if (hit)
+                {
+                    if (hit.transform.GetComponent<DamageTrigger>())
+                    {
+                        OnDamagedClick?.Invoke();
+                        print("damaged");
+                        return;
+                    }
+                
+                    if (hit.transform.TryGetComponent(out DragableObject obj))
+                    {
+                        _dragableObject = obj;
+                        _zPos = _dragableObject.transform.position.z;
+                        _dragableObject.transform.position = MousePosition;
+                        _dragableObject.StartDrag();
+                        return;
+                    }
+
+                    if (hit.transform.TryGetComponent(out IClickable clickable))
+                    {
+                        clickable.Click();
+                        return;
+                    }
+                }
             }
         }
 
-        private void Drag()
+        private void InProgressHandle()
         {
             if (_dragableObject == null) return;
                 
@@ -44,7 +86,7 @@ namespace CodeBase.Gameplay.Mechanics.Root
             _dragableObject.Drag();
         }
 
-        private void EndDrag()
+        private void OnEndHandle()
         {
             if (_dragableObject == null) return;
                 
