@@ -9,7 +9,6 @@ namespace CodeBase.Gameplay.Mechanics
     {
         [SerializeField] private List<CollectingItem> _collectingItems;
         [SerializeField] private float _moveTime = 0.5f;
-        private int _collectedCount; 
         
         private void OnTriggerEnter2D(Collider2D other)
         {

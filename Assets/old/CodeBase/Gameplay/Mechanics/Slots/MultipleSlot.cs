@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using CodeBase.Gameplay.Mechanics.Root;
 using UnityEngine;
 
 namespace CodeBase.Gameplay.Mechanics
@@ -77,7 +76,6 @@ namespace CodeBase.Gameplay.Mechanics
                 //----
                 case SetPositionType.InOrderPair:
                     position = _positions[indexInArray].position;
-                    _positions.Remove(_positions[indexInArray]);
                     break;
                 
                 //----

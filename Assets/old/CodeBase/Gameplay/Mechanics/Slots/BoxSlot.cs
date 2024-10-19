@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using CodeBase.Gameplay.Mechanics.Root;
 using UnityEngine;
 
 namespace CodeBase.Gameplay.Mechanics

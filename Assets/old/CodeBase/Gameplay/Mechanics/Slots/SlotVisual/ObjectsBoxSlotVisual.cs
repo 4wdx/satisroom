@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CodeBase.Gameplay.Mechanics.Slots
+namespace CodeBase.Gameplay.Mechanics
 {
     [RequireComponent(typeof(BoxSlot))]
     public class ObjectsBoxSlotVisual : MonoBehaviour

@@ -11,17 +11,21 @@ namespace CodeBase.Gameplay.Mechanics
         [SerializeField] private bool _startHandle;
         [SerializeField] private bool _endHandle;
         [SerializeField] private bool _disableHandle;
+        [SerializeField] private int _orderDelta = 10;
         
         private DragableObject _dragableObject;
         private SpriteRenderer _spriteRenderer;
   
         [SerializeField] private SpriteRenderer _parentSpriteRenderer;
         private bool _attached;
+        private int _baseOrder;
 
         private void Awake()
         {
             if (_spriteRenderer == null)
                 _spriteRenderer = GetComponent<SpriteRenderer>();
+
+            _baseOrder = _spriteRenderer.sortingOrder;
         }
         
         public void Initialize(DragableObject dragableObject)
@@ -50,7 +54,7 @@ namespace CodeBase.Gameplay.Mechanics
 
         private void OnStartHandle()
         {
-            _spriteRenderer.sortingOrder = 11;
+            _spriteRenderer.sortingOrder = _baseOrder + _orderDelta;
             
             if (_startHandle) 
                 _spriteRenderer.sprite = _onStartDragSprite;
@@ -58,7 +62,7 @@ namespace CodeBase.Gameplay.Mechanics
 
         private void OnEndHandle()
         {
-            _spriteRenderer.sortingOrder = 1;
+            _spriteRenderer.sortingOrder = _baseOrder;
             
             if (_endHandle) 
                 _spriteRenderer.sprite = _onEndDragSprite;

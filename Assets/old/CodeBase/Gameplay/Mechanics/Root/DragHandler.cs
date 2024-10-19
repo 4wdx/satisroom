@@ -1,7 +1,6 @@
 ﻿using System;
 using CodeBase.Utils;
 using UnityEngine;
-using UnityEngine.Serialization;
 using YG;
 
 namespace CodeBase.Gameplay.Mechanics
@@ -27,6 +26,15 @@ namespace CodeBase.Gameplay.Mechanics
             else 
                 Destroy(this);
         }
+        
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0)) OnStartHandle();
+
+            if (Input.GetKey(KeyCode.Mouse0)) InProgressHandle();
+
+            if (Input.GetKeyUp(KeyCode.Mouse0)) OnEndHandle();
+        }
 
         public void CancelDrag()
         {
@@ -35,13 +43,23 @@ namespace CodeBase.Gameplay.Mechanics
             _dragableObject = null;
         }
 
-        private void Update()
+        public IClickable GetClickable()
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0)) OnStartHandle();
+            foreach (LayerMask mask in _layerPriorityOrder)
+            {
+                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition),
+                    Vector2.zero,  Mathf.Infinity, mask);
 
-            if (Input.GetKey(KeyCode.Mouse0)) InProgressHandle();
+                if (!hit) continue;
+                
+                if (hit.transform.TryGetComponent(out IClickable clickable))
+                {
+                    clickable.Click();
+                    return clickable;
+                }
+            }
 
-            if (Input.GetKeyUp(KeyCode.Mouse0)) OnEndHandle();
+            return null;
         }
 
         private void OnStartHandle()

@@ -11,11 +11,11 @@ TagManager:
   - 
   - Water
   - UI
-  - Box
+  - Clickable
   - Item
   - Soap
-  - 
-  - 
+  - DamageTrigger
+  - TopClickable
   - 
   - 
   - 

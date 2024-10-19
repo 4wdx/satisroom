@@ -1,7 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace CodeBase.Gameplay.Mechanics.Slots
+namespace CodeBase.Gameplay.Mechanics
 {
     [RequireComponent(typeof(DefaultSlot))]
     public class DefaultSlotVisual : MonoBehaviour
