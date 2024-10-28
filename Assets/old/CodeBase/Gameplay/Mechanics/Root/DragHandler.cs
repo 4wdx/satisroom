@@ -43,25 +43,6 @@ namespace CodeBase.Gameplay.Mechanics
             _dragableObject = null;
         }
 
-        public IClickable GetClickable()
-        {
-            foreach (LayerMask mask in _layerPriorityOrder)
-            {
-                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition),
-                    Vector2.zero,  Mathf.Infinity, mask);
-
-                if (!hit) continue;
-                
-                if (hit.transform.TryGetComponent(out IClickable clickable))
-                {
-                    clickable.Click();
-                    return clickable;
-                }
-            }
-
-            return null;
-        }
-
         private void OnStartHandle()
         {
             foreach (LayerMask mask in _layerPriorityOrder)
@@ -80,6 +61,9 @@ namespace CodeBase.Gameplay.Mechanics
                 
                     if (hit.transform.TryGetComponent(out DragableObject obj))
                     {
+                        if (obj.IsActive == false)
+                            return;
+                        
                         _dragableObject = obj;
                         _zPos = _dragableObject.transform.position.z;
                         _dragableObject.transform.position = MousePosition;
@@ -98,8 +82,9 @@ namespace CodeBase.Gameplay.Mechanics
 
         private void InProgressHandle()
         {
-            if (_dragableObject == null) return;
-                
+            if (!_dragableObject) return;
+            if (_dragableObject.IsActive == false) return;
+            
             _dragableObject.transform.position = MousePosition;
             _dragableObject.Drag();
         }
@@ -112,7 +97,7 @@ namespace CodeBase.Gameplay.Mechanics
             _dragableObject.EndDrag();
             _dragableObject = null;
             
-            if (YandexGame.GetFlag(Const.PROTECTION_FLAG_NAME) != Const.PROTECTION_FLAG_KEY)
+            if (YandexGame.GetFlag(Const.ProtectionFlagName) != Const.ProtectionFlagKey)
                 YandexGame.FullscreenShow();
         }
     }

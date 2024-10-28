@@ -1,6 +1,4 @@
-﻿using CodeBase.Gameplay.Mechanics.Root;
-
-namespace CodeBase.Gameplay.Mechanics
+﻿namespace CodeBase.Gameplay.Mechanics
 {
     public interface ITaskModificator
     {

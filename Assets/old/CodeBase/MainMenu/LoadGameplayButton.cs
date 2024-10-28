@@ -1,9 +1,11 @@
+using System.Collections.Generic;
 using CodeBase.MainMenu.Root;
 using CodeBase.Root;
 using CodeBase.ServiceLocatorAPI;
 using CodeBase.Utils;
 using UnityEngine;
 using UnityEngine.UI;
+
 using YG;
 
 namespace CodeBase.MainMenu
@@ -18,15 +20,11 @@ namespace CodeBase.MainMenu
         private Image _lockImage;
         private int _levelIndex;
 
-        private void Awake()
-        {
+        private void Awake() => 
             _lockImage = _lockPanel.GetComponent<Image>();
-        }
 
-        private void Start()
-        {
+        private void Start() => 
             _mainMenuMediator = ServiceLocator.Resolve<MainMenuMediator>();
-        }
 
         public void ReConstruct(int levelIndex, Sprite levelIcon)
         {
@@ -53,6 +51,10 @@ namespace CodeBase.MainMenu
         {
             if (id == _levelIndex)
                 SaveManager.OpenLevel(_levelIndex);
+
+            Dictionary<string, string> data = new Dictionary<string, string>();
+            data.Add(Const.OpenLevelMetricaName, _levelIndex.ToString());
+            YandexMetrica.Send(Const.OpenLevelMetricaName, data);
             
             YandexGame.RewardVideoEvent -= RewardedAwait;
             _mainMenuMediator.OnRewardedEnd();

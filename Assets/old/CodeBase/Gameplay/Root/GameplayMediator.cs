@@ -1,10 +1,11 @@
-using System.Threading.Tasks;
+using System.Collections.Generic;
+
 using CodeBase.Gameplay.Levels;
-using CodeBase.Gameplay.Mechanics;
 using CodeBase.Gameplay.UI;
 using CodeBase.Root;
+using CodeBase.Utils;
+
 using UnityEngine;
-using UnityEngine.Serialization;
 using YG;
 
 namespace CodeBase.Gameplay.Root
@@ -13,7 +14,7 @@ namespace CodeBase.Gameplay.Root
     {
         [field: SerializeField] public Sprite LevelIcon { get; private set; }
 
-        [FormerlySerializedAs("_levelRool"),SerializeField] private Level _level;
+        [SerializeField] private Level _level;
         [SerializeField] private GameObject _hint;
         
         private GameplayExitInvoker _gameplayExitInvoker;
@@ -30,6 +31,7 @@ namespace CodeBase.Gameplay.Root
             _level.OnCompleted += LevelCompleteHandle;
             _uiMediator.OnShowHint += ShowHintHandle;
             _uiMediator.OnUISceneExit += UISceneExitHandle;
+            _uiMediator.OnForcedCloseLevel += ForcedCloseLevelHandle;
         }
 
         public void OnDestroy()
@@ -38,12 +40,24 @@ namespace CodeBase.Gameplay.Root
             _level.OnCompleted -= LevelCompleteHandle;
             _uiMediator.OnShowHint -= ShowHintHandle;
             _uiMediator.OnUISceneExit -= UISceneExitHandle;
+            _uiMediator.OnForcedCloseLevel -= ForcedCloseLevelHandle;
         }
-        
+
         private void LevelCompleteHandle(bool result)
         {
+            Dictionary<string, string> data = new Dictionary<string, string>();
             if (result == true)
+            {
                 SaveManager.LevelComplete(_levelIndex);
+                
+                data.Add(Const.LevelWinMetricaName, _levelIndex.ToString());
+                YandexMetrica.Send(Const.LevelWinMetricaName, data);
+            }
+            else
+            {
+                data.Add(Const.LevelLoseMetricaName, _levelIndex.ToString());
+                YandexMetrica.Send(Const.LevelLoseMetricaName, data);
+            }
             
             _uiMediator.ShowResultWindow(_levelIndex);
         }
@@ -51,6 +65,15 @@ namespace CodeBase.Gameplay.Root
         private void UISceneExitHandle(ExitType exitType) => 
             _gameplayExitInvoker.InvokeExit(exitType);
 
+        private void ForcedCloseLevelHandle()
+        {
+            Dictionary<string, string> data = new Dictionary<string, string>();
+            data.Add(Const.ForcedCloseLevelMetricaName, _levelIndex.ToString());
+            YandexMetrica.Send(Const.ForcedCloseLevelMetricaName, data);
+            
+            _gameplayExitInvoker.InvokeExit(ExitType.ToMainMenu);
+        }
+        
         private void ShowHintHandle()
         {
             YandexGame.RewVideoShow(99);

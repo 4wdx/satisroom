@@ -1,5 +1,4 @@
-﻿using CodeBase.Gameplay.Mechanics.Root;
-using DG.Tweening;
+﻿using DG.Tweening;
 using UnityEngine;
 
 namespace CodeBase.Gameplay.Mechanics
@@ -8,8 +7,8 @@ namespace CodeBase.Gameplay.Mechanics
     public class ItemTransformModificator : MonoBehaviour, IItemModificator
     {
         [Header("Base Values")]
-        [SerializeField] private Vector3 _baseRotation;
-        [SerializeField] private Vector3 _baseScale;
+        private Vector3 _baseRotation;
+        private Vector3 _baseScale;
         
         [Header("On Drag Values")]
         [SerializeField] private Vector3 _targetRotation;

@@ -1,6 +1,6 @@
 using System;
 using System.Collections;
-
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Object = UnityEngine.Object;
@@ -43,7 +43,9 @@ namespace CodeBase.Root
 
         private IEnumerator StartGame()
         {
-#if UNITY_EDITOR
+            YandexMetrica.Send(Const.StartGameMetricaName);
+            
+/*#if UNITY_EDITOR
             string loadingScene = SceneManager.GetActiveScene().name;
             
             _uiRoot.ShowLoadingScreen();
@@ -54,7 +56,7 @@ namespace CodeBase.Root
             
             yield return SceneManager.LoadSceneAsync(loadingScene);
             yield break;
-#endif
+#endif*/
             
             _uiRoot.ShowLoadingScreen();
             yield return SceneManager.LoadSceneAsync(SceneNames.BOOT);
@@ -75,8 +77,8 @@ namespace CodeBase.Root
             yield return SceneManager.LoadSceneAsync(SceneNames.BOOT);
             yield return SceneManager.LoadSceneAsync(SceneNames.MAIN_MENU);
 
-            var menuBootstrap = Object.FindFirstObjectByType<MainMenuBootstrap>();
-            var exitParams = menuBootstrap.Run();
+            MainMenuBootstrap menuBootstrap = Object.FindFirstObjectByType<MainMenuBootstrap>();
+            MainMenuExitInvoker exitParams = menuBootstrap.Run();
             Debug.Log(exitParams);
             exitParams.OnMenuExit += OnMenuExitHandle;
             YandexGame.GameplayStop();
@@ -84,14 +86,15 @@ namespace CodeBase.Root
             _uiRoot.HideLoadingScreen();
         }
 
-        private void OnMenuExitHandle(int levelIndex)
-        {
-            Debug.Log("load");
+        private void OnMenuExitHandle(int levelIndex) => 
             _coroutines.StartCoroutine(LoadGameplay(levelIndex));
-        }
 
         private IEnumerator LoadGameplay(int levelIndex)
         {
+            Dictionary<string, string> data = new Dictionary<string, string>();
+            data.Add(Const.LevelStartMetricaName, levelIndex.ToString());
+            YandexMetrica.Send(Const.LevelStartMetricaName, data);
+            
             ServiceLocator.DisposeScene();
             _uiRoot.ClearChildUI();
             _uiRoot.ShowLoadingScreen();
@@ -99,8 +102,8 @@ namespace CodeBase.Root
             yield return SceneManager.LoadSceneAsync(SceneNames.BOOT);
             yield return SceneManager.LoadSceneAsync(SceneNames.GAMEPLAY);
 
-            var menuBootstrap = Object.FindFirstObjectByType<GameplayBootstrap>();
-            var exitParams = menuBootstrap.Run(levelIndex);
+            GameplayBootstrap menuBootstrap = Object.FindFirstObjectByType<GameplayBootstrap>();
+            GameplayExitInvoker exitParams = menuBootstrap.Run(levelIndex);
             exitParams.OnGameplayExit += OnGameplayExitHandle;
             YandexGame.GameplayStart();
             
@@ -109,7 +112,7 @@ namespace CodeBase.Root
 
         private void OnGameplayExitHandle(GameplayExitParams gameplayExitParams)
         {
-            Debug.Log("switch");
+            
             switch (gameplayExitParams.ExitType)
             {
                 case ExitType.ToMainMenu:

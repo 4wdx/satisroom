@@ -8,13 +8,13 @@ namespace CodeBase.MainMenu
     {
         private void Start()
         {
-            if (YandexGame.GetFlag(Const.PROTECTION_FLAG_NAME) != Const.PROTECTION_FLAG_KEY)
+            if (YandexGame.GetFlag(Const.ProtectionFlagName) != Const.ProtectionFlagKey)
                 gameObject.SetActive(false);
         }
 
         public void OpenTelegram()
         {
-            Application.OpenURL(Const.TG_URL);
+            Application.OpenURL(Const.TgURL);
         }
     }
 }

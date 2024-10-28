@@ -1,5 +1,4 @@
-﻿using CodeBase.Gameplay.Mechanics.Root;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace CodeBase.Gameplay.Mechanics
 {

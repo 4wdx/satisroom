@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using CodeBase.Gameplay.Root;
 using CodeBase.Root;
 using UnityEngine;
@@ -10,6 +11,7 @@ namespace CodeBase.Gameplay.UI
     public class GameplayUIMediator : MonoBehaviour
     {
         public event Action<ExitType> OnUISceneExit;
+        public event Action OnForcedCloseLevel;
         public event Action OnShowHint;        
     
         [SerializeField] private RectTransform _windowObject;
@@ -44,7 +46,10 @@ namespace CodeBase.Gameplay.UI
         
         public void _OpenNextLevel() => 
             OnUISceneExit?.Invoke(ExitType.ToNext);
-        
+
+        public void _ForcedCloseLevel() => 
+            OnForcedCloseLevel?.Invoke();
+
         public void _ShowHint() => 
             OnShowHint?.Invoke();
     }

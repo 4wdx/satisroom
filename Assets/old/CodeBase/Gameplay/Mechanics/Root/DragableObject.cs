@@ -10,34 +10,62 @@ namespace CodeBase.Gameplay.Mechanics
         public event Action OnEndDrag;
         public event Action OnDisable;
 
+        [Tooltip("GameObject for manage DragableObject state. If not null, activity of this component equals to object in field activity in hierarchy, else always true")]
+        [SerializeField] private GameObject _stateProvider;
+        public bool IsActive {
+            get {
+                if (_useStateProvider)
+                    return _stateProvider.activeInHierarchy;
+                
+                return true;
+            }
+            
+        }
         private IItemModificator[] _itemModificators;
+        private bool _useStateProvider;
 
         private void Start()
         {
             _itemModificators = GetComponents<IItemModificator>();
             
-            foreach (var itemModificator in _itemModificators) 
+            foreach (IItemModificator itemModificator in _itemModificators) 
                 itemModificator.Initialize(this);
+
+            _useStateProvider = _stateProvider != null;
         }
 
         private void OnDestroy()
         {
             if (_itemModificators == null) return;
             
-            foreach (var itemModificator in _itemModificators) 
+            foreach (IItemModificator itemModificator in _itemModificators) 
                 itemModificator.Dispose();
         }
 
-        public void StartDrag() => 
+        public void StartDrag()
+        {
+            if (IsActive == false) return;
+            
             OnStartDrag?.Invoke();
+        }
 
-        public void Drag() => 
+        public void Drag()
+        {
+            if (IsActive == false) return;
+
             OnDrag?.Invoke();
+        }
 
-        public void EndDrag() => 
+        public void EndDrag()
+        {
+            if (IsActive == false) return;
+
             OnEndDrag?.Invoke();
+        }
 
-        public void Disable() => 
+        public void Disable()
+        {
             OnDisable?.Invoke();
+        }
     }
 }

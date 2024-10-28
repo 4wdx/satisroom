@@ -1,5 +1,5 @@
 ﻿using System;
-using CodeBase.Gameplay.Mechanics.Root;
+using CodeBase.Gameplay.Mechanics;
 using UnityEngine;
 
 namespace CodeBase.Gameplay.Levels

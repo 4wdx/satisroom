@@ -1,5 +1,4 @@
-﻿using CodeBase.Gameplay.Mechanics.Root;
-using DG.Tweening;
+﻿using DG.Tweening;
 using UnityEngine;
 
 

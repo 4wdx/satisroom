@@ -1,5 +1,4 @@
-﻿using CodeBase.Gameplay.Mechanics.Root;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace CodeBase.Gameplay.Mechanics
 {
@@ -17,17 +16,17 @@ namespace CodeBase.Gameplay.Mechanics
         
         private Texture2D _texture;
         private Color[] _originalColors;
-        
+
         private void Start()
         {
             _texture = _spriteRenderer.sprite.texture;
             _originalColors = _texture.GetPixels();
-
+            
             if (_paintType == PaintType.Paint) 
                 ClearTexture();
         }
 
-        void Update()
+        private void Update()
         {
             if (IsActive == false) return;
             
@@ -40,7 +39,6 @@ namespace CodeBase.Gameplay.Mechanics
 
         private void OnDisable() => 
             ResetTexture();
-        
 
         private Vector2Int GetTexturePosition(Vector2 worldPosition)
         {
@@ -70,7 +68,6 @@ namespace CodeBase.Gameplay.Mechanics
                     
                 }
             }
-            
             _texture.Apply();
         }
 
@@ -130,6 +127,19 @@ namespace CodeBase.Gameplay.Mechanics
                 }
             }
             _texture.Apply();
+        }
+    }
+
+    public class TextureData : MonoBehaviour
+    {
+        private SpriteRenderer _spriteRenderer;
+        private Texture2D _texture;
+        private Color[] _originalColors;
+
+        private void Start()
+        {
+            _texture = _spriteRenderer.sprite.texture;
+            _originalColors = _texture.GetPixels();
         }
     }
 }

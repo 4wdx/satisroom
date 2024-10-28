@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace CodeBase.Gameplay.Mechanics.Root
+namespace CodeBase.Gameplay.Mechanics
 {
     public abstract class Task : MonoBehaviour
     {
@@ -35,7 +35,7 @@ namespace CodeBase.Gameplay.Mechanics.Root
         {
             DragHandler.Instance.CancelDrag();
             
-            print("stopTask");
+            print("stop task");
             IsActive = false;
             OnComplete?.Invoke();
         }

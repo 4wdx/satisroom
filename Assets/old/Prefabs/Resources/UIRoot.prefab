@@ -618,6 +618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5130470859820619676}
   - component: {fileID: 26292850225877246}
+  - component: {fileID: 8561847921606236742}
   m_Layer: 0
   m_Name: UIRoot
   m_TagString: Untagged
@@ -657,6 +658,27 @@ MonoBehaviour:
   _loadingScreen: {fileID: 1861192112239127214}
   _parentSceneUI: {fileID: 5578467962048517437}
   _rootParent: {fileID: 7275586757491234628}
+--- !u!114 &8561847921606236742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946181260824299905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525cfe59857a476f862316af33cefbe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _layerPriorityOrder:
+  - serializedVersion: 2
+    m_Bits: 512
+  - serializedVersion: 2
+    m_Bits: 128
+  - serializedVersion: 2
+    m_Bits: 1024
+  - serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &2106735831307646956
 GameObject:
   m_ObjectHideFlags: 0
