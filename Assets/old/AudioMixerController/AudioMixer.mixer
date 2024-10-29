@@ -96,7 +96,7 @@ AudioMixerEffectController:
   m_Name: 
   m_EffectID: 80d7b6f8764a36e42a8c3ef2db1f280c
   m_EffectName: Attenuation
-  m_MixLevel: 00000000000000000000000000000000
+  m_MixLevel: ea14a284fd208e84c829ad8a09d3981e
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
@@ -110,7 +110,7 @@ AudioMixerEffectController:
   m_Name: 
   m_EffectID: 80c282106e98a1043a507d0548ac01b1
   m_EffectName: Attenuation
-  m_MixLevel: 00000000000000000000000000000000
+  m_MixLevel: 2acb8ebe8fe8ed94a8161e5349f77be6
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
@@ -124,7 +124,7 @@ AudioMixerEffectController:
   m_Name: 
   m_EffectID: 7f68608b4e94dc944838de049ad92502
   m_EffectName: Attenuation
-  m_MixLevel: 00000000000000000000000000000000
+  m_MixLevel: d62447f16a5714c499a4654b5fe94a33
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
