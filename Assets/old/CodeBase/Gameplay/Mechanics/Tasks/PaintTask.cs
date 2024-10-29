@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Events;
 
 namespace CodeBase.Gameplay.Mechanics
 {
@@ -19,23 +18,29 @@ namespace CodeBase.Gameplay.Mechanics
         private Texture2D _texture;
         private Sprite _newSprite;
         private Color[] _originalColors;
+        private int _clearPixelsCount;
 
         private void OnEnable()
         {
             Sprite tempSprite = _spriteRenderer.sprite;
-            
+
             _texture = new Texture2D(tempSprite.texture.width, tempSprite.texture.height);
             _texture.SetPixels(tempSprite.texture.GetPixels());
             _texture.Apply();
 
-            _originalColors = tempSprite.texture.GetPixels();
+            _originalColors = _texture.GetPixels();
+            print(_texture.GetPixels().Length);
 
-            _newSprite = Sprite.Create(_texture, new Rect(0,0,_texture.width, _texture.height), new Vector2(0.5f, 0.5f), tempSprite.pixelsPerUnit);
+            Vector2 pivot = new Vector2(tempSprite.pivot.x / _texture.width, tempSprite.pivot.y / _texture.height);
+            _newSprite = Sprite.Create(_texture, new Rect(0, 0, _texture.width, _texture.height), pivot, tempSprite.pixelsPerUnit);
             _spriteRenderer.sprite = _newSprite;
-        }
-
-        private void Start()
-        {
+            
+            foreach (Color pixel in _originalColors)
+            {
+                if (pixel.a < 0.2)
+                    _clearPixelsCount++;
+            }
+            
             if (_paintType == PaintType.Paint)
                 ClearTexture();
         }
@@ -43,9 +48,11 @@ namespace CodeBase.Gameplay.Mechanics
         private void Update()
         {
             if (IsActive == false) return;
-            
+
+            Vector3 brushPos = _brush.position;
+            brushPos.z = _spriteRenderer.transform.position.z;
             if (Input.GetKey(KeyCode.Mouse0))
-                PaintPixel(GetTexturePosition(_brush.position));
+                PaintPixel(GetTexturePosition(brushPos));
 
             if (Input.GetKeyUp(KeyCode.Mouse0))
                 CheckCompleted();
@@ -59,8 +66,7 @@ namespace CodeBase.Gameplay.Mechanics
             Vector3 localPos = _spriteRenderer.transform.InverseTransformPoint(worldPosition);
             int x = Mathf.RoundToInt((localPos.x + _spriteRenderer.sprite.bounds.extents.x) * _texture.width / _spriteRenderer.sprite.bounds.size.x);
             int y = Mathf.RoundToInt((localPos.y + _spriteRenderer.sprite.bounds.extents.y) * _texture.height / _spriteRenderer.sprite.bounds.size.y);
-            print(x + " " + y);
-            
+
             return new Vector2Int(x, y);
         }
 
@@ -90,15 +96,13 @@ namespace CodeBase.Gameplay.Mechanics
             var pixels = _texture.GetPixels();
             var paintedPixels = 0;
 
-            print("start test");
-            
             switch (_paintType)
             {
                 case PaintType.Erase:
                 {
                     foreach (Color pixel in pixels)
                     {
-                        if (pixel.a < 0.1)
+                        if (pixel.a < 0.2)
                             paintedPixels++;
                     }
                     break;
@@ -107,16 +111,16 @@ namespace CodeBase.Gameplay.Mechanics
                 {
                     foreach (var pixel in pixels)
                     {
-                        if (pixel.a > 0.9)
+                        if (pixel.a > 0.2)
                             paintedPixels++;
                     }
                     break;
                 }
             }
 
-            if (paintedPixels > _originalColors.Length * 0.95)
+            print(paintedPixels + "  " + (_originalColors.Length - _clearPixelsCount));
+            if (paintedPixels > (_originalColors.Length - _clearPixelsCount) * 0.95)
             {
-                StopTask();
                 switch (_paintType)
                 {
                     case PaintType.Erase:
@@ -126,6 +130,8 @@ namespace CodeBase.Gameplay.Mechanics
                         ResetTexture();
                         break;
                 }
+                
+                StopTask();
             }
         }
 

@@ -97,7 +97,8 @@ namespace CodeBase.Gameplay.Mechanics
             _dragableObject.EndDrag();
             _dragableObject = null;
             
-            if (YandexGame.GetFlag(Const.ProtectionFlagName) != Const.ProtectionFlagKey)
+            bool protectionEnabled = YandexGame.GetFlag(Const.ProtectionFlagName) != Const.ProtectionFlagKey;
+            if (protectionEnabled == false)
                 YandexGame.FullscreenShow();
         }
     }

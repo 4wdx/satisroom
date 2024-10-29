@@ -36,6 +36,8 @@ namespace CodeBase.Gameplay.Mechanics
             foreach (var tr in _movedTransforms)
             {
                 var targetVector = _targetPosition.position - tr.position;
+                targetVector.z = tr.position.y;
+                print("move");
                 
                 tr.DOMove(targetVector, _moveDuration).onComplete 
                     += () => tr.gameObject.SetActive(_activeAfterMove);
@@ -48,9 +50,11 @@ namespace CodeBase.Gameplay.Mechanics
             
             foreach (var tr in _movedTransforms)
             {
-                var targetVector = _targetPosition.position - tr.position;
+                Vector3 movingVector = _targetPosition.position - tr.position;
+                movingVector.z = 0;
+                print("move");
                 
-                tr.DOMove(targetVector, _moveDuration).onComplete 
+                tr.DOMove(tr.position + movingVector, _moveDuration).onComplete 
                     += () => tr.gameObject.SetActive(_activeAfterMove);
             }
         }

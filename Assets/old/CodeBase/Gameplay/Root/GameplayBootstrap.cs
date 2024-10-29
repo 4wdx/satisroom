@@ -30,7 +30,7 @@ namespace CodeBase.Gameplay.Root
 
             //attach ui
             _uiRoot = ServiceLocator.Resolve<UIRoot>();
-            //_uiRoot.AttachSceneUI(_uiMediator.gameObject);
+            _uiRoot.AttachSceneUI(_uiMediator.gameObject);
             
             //return invoker
             return _gameplayExitInvoker;

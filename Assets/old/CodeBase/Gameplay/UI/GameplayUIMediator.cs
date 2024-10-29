@@ -15,9 +15,8 @@ namespace CodeBase.Gameplay.UI
         public event Action OnShowHint;        
     
         [SerializeField] private RectTransform _windowObject;
-        [SerializeField] private GameObject _nextLevelButton;
-        [SerializeField] private GameObject _stars;
-        [SerializeField] private TextMeshProUGUI _textMeshPro;
+        [SerializeField] private GameObject _winPanel;
+        [SerializeField] private GameObject _losePanel;
         
         private Canvas _canvas;
         
@@ -32,10 +31,8 @@ namespace CodeBase.Gameplay.UI
             _windowObject.gameObject.SetActive(true);
             _windowObject.DOMove(new Vector2(_canvas.pixelRect.width / 2, _canvas.pixelRect.height / 2), 0.4f);
 
-            _stars.SetActive(SaveManager.IsCompleted(levelIndex));
-            _nextLevelButton.SetActive(SaveManager.IsCompleted(levelIndex));
-            
-            _textMeshPro.text = SaveManager.IsCompleted(levelIndex) ? "Победа" : "Поражение";
+            _winPanel.SetActive(SaveManager.IsCompleted(levelIndex));
+            _losePanel.SetActive(!SaveManager.IsCompleted(levelIndex));
         }
         
         public void _ExitToMenu() => 

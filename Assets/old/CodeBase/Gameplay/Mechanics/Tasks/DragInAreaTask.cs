@@ -44,9 +44,10 @@ namespace CodeBase.Gameplay.Mechanics
         
         private void DisableDragableObject()
         {
-            print("dfsgsdgf");
-            _dragableObject.transform.position = transform.position;
-            _dragableObject.Disable();
+            print("complete");
+            _dragableObject.transform.position = new Vector3(transform.position.x, 
+                                                             transform.position.y,
+                                                             _dragableObject.transform.position.z);
         }
     }
 }

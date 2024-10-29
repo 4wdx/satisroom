@@ -1,7 +1,7 @@
 {
-    "idSave": 209,
+    "idSave": 265,
     "isFirstSession": false,
-    "language": "ru",
+    "language": "en",
     "promptDone": false,
     "OpenedLevels": [
         true,
@@ -9,7 +9,7 @@
         true,
         false,
         true,
-        false,
+        true,
         false,
         false,
         false,
@@ -24,7 +24,7 @@
         true,
         false,
         false,
-        false,
+        true,
         false,
         false,
         false,
@@ -36,5 +36,5 @@
         false
     ],
     "sfxEnabled": false,
-    "musicEnabled": false
+    "musicEnabled": true
 }

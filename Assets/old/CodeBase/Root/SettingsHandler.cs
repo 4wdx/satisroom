@@ -1,33 +1,31 @@
-using TMPro;
+using CodeBase.MainMenu;
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEngine.UI;
 using YG;
 
 namespace CodeBase.Root
 {
     public class SettingsHandler : MonoBehaviour
     {
-        [SerializeField] private Toggle _musicToggle;
-        [SerializeField] private Toggle _langToggle;
-        [SerializeField] private Toggle _sfxToggle;
-        [SerializeField] private TextMeshProUGUI _textMeshPro;
+        [SerializeField] private ToggleButton _musicButton;
+        [SerializeField] private ToggleButton _langButton;
+        [SerializeField] private ToggleButton _sfxButton;
 
         [SerializeField] private AudioMixer _audioMixer;
 
         private void Start()
         {
-            _musicToggle.isOn = YandexGame.savesData.musicEnabled;
-            _sfxToggle.isOn = YandexGame.savesData.sfxEnabled;
-            _langToggle.isOn = YandexGame.lang == "ru";
+            _musicButton.Init(YandexGame.savesData.musicEnabled);
+            _sfxButton.Init(YandexGame.savesData.sfxEnabled);
+            _langButton.Init(YandexGame.lang == "ru");
+            print(YandexGame.lang);
             
-            _musicToggle.onValueChanged.AddListener(SetMusic);
-            _langToggle.onValueChanged.AddListener(SetLang);
-            _sfxToggle.onValueChanged.AddListener(SetSfx);
+            _musicButton.OnSwitchState += SetMusic;
+            _langButton.OnSwitchState += SetLang;
+            _sfxButton.OnSwitchState += SetSfx;
 
             _audioMixer.SetFloat("music", GetVolume(YandexGame.savesData.musicEnabled));
             _audioMixer.SetFloat("SFX", GetVolume(YandexGame.savesData.sfxEnabled));
-            _textMeshPro.text = "lang: " + YandexGame.lang;
         }
 
         private void SetMusic(bool value)
@@ -35,24 +33,20 @@ namespace CodeBase.Root
             YandexGame.savesData.musicEnabled = value;
             _audioMixer.SetFloat("music", GetVolume(YandexGame.savesData.musicEnabled));
             YandexGame.SaveProgress();
-            print("Music: " + value);
         }
 
         private void SetSfx(bool value)
         {
             YandexGame.savesData.sfxEnabled = value;
-            _audioMixer.SetFloat("music", GetVolume(YandexGame.savesData.sfxEnabled));
+            _audioMixer.SetFloat("SFX", GetVolume(YandexGame.savesData.sfxEnabled));
             YandexGame.SaveProgress();
-            print("SFX: " + value);
         }
 
         private void SetLang(bool value)
         {
-            YandexGame.lang = GetLang(value);
+            print(GetLang(value));
+            YandexGame.SwitchLanguage(GetLang(value)); 
             YandexGame.SaveProgress();
-
-            _textMeshPro.text = "lang: " + GetLang(value);
-            print("Lang: " + GetLang(value));
         }
 
         private float GetVolume(bool enabled) => enabled ? 0 : -80f;

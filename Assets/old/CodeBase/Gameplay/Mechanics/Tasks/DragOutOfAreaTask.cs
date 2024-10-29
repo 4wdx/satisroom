@@ -25,7 +25,6 @@ namespace CodeBase.Gameplay.Mechanics
 
             if (dragableObject == _dragableObject)
             {
-                print("exit");
                 _dragableObject.OnEndDrag -= ReturnToStartPosition;
                 _dragableObject.OnEndDrag += StopTask;
             }
@@ -39,18 +38,17 @@ namespace CodeBase.Gameplay.Mechanics
 
             if (dragableObject == _dragableObject)
             {
-                print("enter");
                 _dragableObject.OnEndDrag += ReturnToStartPosition;
                 _dragableObject.OnEndDrag -= StopTask;
             }
         }
-        private void DisableDragableObject()
-        {
-            _dragableObject.Disable();
+        private void DisableDragableObject() => 
             _dragableObject.OnEndDrag -= StopTask;
-        }
 
         private void ReturnToStartPosition() => 
-            _dragableObject.transform.position = transform.position;
+            _dragableObject.transform.position = new Vector3(
+                transform.position.x,
+                transform.position.y,
+                _dragableObject.transform.position.z); 
     }
 }
