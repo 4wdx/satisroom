@@ -30,16 +30,18 @@ namespace CodeBase.Gameplay.Mechanics
 
             _originalColors = _texture.GetPixels();
             print(_texture.GetPixels().Length);
+            
+            foreach (Color pixel in _originalColors)
+            {
+                if (pixel.a < 0.001)
+                    _clearPixelsCount++;
+            }
+            
+            print(_clearPixelsCount);
 
             Vector2 pivot = new Vector2(tempSprite.pivot.x / _texture.width, tempSprite.pivot.y / _texture.height);
             _newSprite = Sprite.Create(_texture, new Rect(0, 0, _texture.width, _texture.height), pivot, tempSprite.pixelsPerUnit);
             _spriteRenderer.sprite = _newSprite;
-            
-            foreach (Color pixel in _originalColors)
-            {
-                if (pixel.a < 0.2)
-                    _clearPixelsCount++;
-            }
             
             if (_paintType == PaintType.Paint)
                 ClearTexture();
@@ -102,7 +104,7 @@ namespace CodeBase.Gameplay.Mechanics
                 {
                     foreach (Color pixel in pixels)
                     {
-                        if (pixel.a < 0.2)
+                        if (pixel.a < 0.001)
                             paintedPixels++;
                     }
                     break;
@@ -111,15 +113,16 @@ namespace CodeBase.Gameplay.Mechanics
                 {
                     foreach (var pixel in pixels)
                     {
-                        if (pixel.a > 0.2)
+                        if (pixel.a > 0.001)
                             paintedPixels++;
                     }
+                    paintedPixels += _clearPixelsCount;
                     break;
                 }
             }
 
-            print(paintedPixels + "  " + (_originalColors.Length - _clearPixelsCount));
-            if (paintedPixels > (_originalColors.Length - _clearPixelsCount) * 0.95)
+            print(paintedPixels + " / " + _originalColors.Length);
+            if (paintedPixels  > _originalColors.Length * 0.95)
             {
                 switch (_paintType)
                 {
