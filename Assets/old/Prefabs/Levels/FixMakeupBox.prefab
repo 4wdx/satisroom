@@ -1165,7 +1165,6 @@ MonoBehaviour:
   _correctSound: {fileID: 8300000, guid: ab1931acff49ec04189aa728d83bb7b8, type: 3}
   _uncorrectSound: {fileID: 8300000, guid: bb905407c0a65a54d9ed02bfba8be2ad, type: 3}
   _showTime: 1
-  _spriteRenderer: {fileID: 3954885514640030133}
 --- !u!82 &496566859647132779
 AudioSource:
   m_ObjectHideFlags: 0

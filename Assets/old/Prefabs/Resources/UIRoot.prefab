@@ -619,6 +619,7 @@ GameObject:
   - component: {fileID: 5130470859820619676}
   - component: {fileID: 26292850225877246}
   - component: {fileID: 8561847921606236742}
+  - component: {fileID: 253516660015853949}
   m_Layer: 0
   m_Name: UIRoot
   m_TagString: Untagged
@@ -680,6 +681,14 @@ MonoBehaviour:
     m_Bits: 1024
   - serializedVersion: 2
     m_Bits: 64
+--- !u!81 &253516660015853949
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946181260824299905}
+  m_Enabled: 1
 --- !u!1 &2106735831307646956
 GameObject:
   m_ObjectHideFlags: 0

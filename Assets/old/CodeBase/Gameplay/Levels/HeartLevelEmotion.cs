@@ -12,14 +12,15 @@ namespace CodeBase.Gameplay.Levels
         [SerializeField] private AudioClip _uncorrectSound;
         [SerializeField] private float _showTime;
 
-        [SerializeField] private SpriteRenderer _spriteRenderer;
+        private SpriteRenderer _spriteRenderer;
         private AudioSource _audioSource;
 
         private void Start()
         {
+            _spriteRenderer = GetComponent<SpriteRenderer>();
             _audioSource = GetComponent<AudioSource>();
             _audioSource.loop = false;
-            _spriteRenderer.gameObject.SetActive(false);
+            _spriteRenderer.enabled = false;
         }
         
         public void StartShow(bool result) => 
@@ -41,9 +42,9 @@ namespace CodeBase.Gameplay.Levels
                 _spriteRenderer.sprite = _uncorrectSprite;
             }
             
-            _spriteRenderer.gameObject.SetActive(true);
+            _spriteRenderer.enabled = true;
             yield return new WaitForSeconds(_showTime);
-            _spriteRenderer.gameObject.SetActive(false);
+            _spriteRenderer.enabled = false;
         }
     }
 }
