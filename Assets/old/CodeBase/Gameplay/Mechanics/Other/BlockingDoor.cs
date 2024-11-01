@@ -5,6 +5,7 @@ namespace CodeBase.Gameplay.Mechanics
 {
     public class BlockingDoor : MonoBehaviour, IClickable
     {
+        public event Action OnClicked;
         public bool Opened { get; private set; }
         
         private SpriteRenderer _spriteRenderer;
@@ -20,6 +21,7 @@ namespace CodeBase.Gameplay.Mechanics
         {
             Opened = !Opened;
             _animator.SetBool("opened", Opened);
+            OnClicked?.Invoke();
         }
     }
 }

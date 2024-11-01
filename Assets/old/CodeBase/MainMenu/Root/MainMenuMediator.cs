@@ -26,16 +26,7 @@ namespace CodeBase.MainMenu.Root
         public void StartGameplay(int targetLevel) => 
             _mainMenuExitInvoker.Invoke(targetLevel);
 
-        public void BlockScroll() => 
-            _tikTokFeed.Block();
-        
-        public void UnlockScroll() => 
-            _tikTokFeed.Unlock();
-
-        public void OnRewardedEnd()
-        {
+        public void ReconstructButtons() => 
             _buttonHandler.ReconstructButtons();
-            _tikTokFeed.ClearBlocklist();
-        }
     }
 }

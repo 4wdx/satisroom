@@ -13,9 +13,13 @@ namespace CodeBase.Root
                 throw new Exception("Invalid level index");
             
             YandexGame.savesData.CompletedLevels[levelIndex] = true;
-            
-            if (YandexGame.savesData.OpenedLevels[levelIndex + 1] == false) //if next closed, open
-                YandexGame.savesData.OpenedLevels[levelIndex + 1] = true;
+
+            if (levelIndex < LevelCount - 1)
+            {
+                //if next closed, open
+                if (YandexGame.savesData.OpenedLevels[levelIndex + 1] == false) 
+                    YandexGame.savesData.OpenedLevels[levelIndex + 1] = true;
+            } 
             
             YandexGame.SaveProgress();
         }

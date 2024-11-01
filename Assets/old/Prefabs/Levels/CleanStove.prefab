@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 134091148021141698}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.29, y: 0.05, z: 0}
+  m_LocalPosition: {x: -0.29, y: 0.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 6985762830109500132}
   - component: {fileID: 3672188043804470041}
   - component: {fileID: 2933384975298688807}
+  - component: {fileID: 7351656617825027119}
   m_Layer: 7
   m_Name: SoapSprayer
   m_TagString: Untagged
@@ -124,6 +125,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1060691397426644875}
+  - {fileID: 7334365465908810011}
   - {fileID: 8617188336453052292}
   - {fileID: 5931904986217948327}
   m_Father: {fileID: 4108771332945174845}
@@ -287,6 +289,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d698ac41648149f8955866a757a3bb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7351656617825027119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241246899520087034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 8300000, guid: 6a28f535f7cb4384cbcbcecadd0a3697, type: 3}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &491255905857347269
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +407,7 @@ MonoBehaviour:
   _brush: {fileID: 1060691397426644875}
   _brushSize: 50
   _paintType: 0
+  _valueForComplete: 0.95
 --- !u!114 &300824799104976700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,6 +473,7 @@ GameObject:
   - component: {fileID: 6855545523043583801}
   - component: {fileID: 2000698927425597835}
   - component: {fileID: 5045485425834855477}
+  - component: {fileID: 8732144869303700031}
   m_Layer: 7
   m_Name: SmallPan
   m_TagString: Untagged
@@ -604,6 +624,22 @@ MonoBehaviour:
   _disableScale: {x: 0.9, y: 0.9, z: 0.9}
   _transitDuration: 0.42
   _disableCollider: 0
+--- !u!114 &8732144869303700031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617651164672144013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &799153615488769803
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +741,7 @@ MonoBehaviour:
   _brush: {fileID: 6323748471387945177}
   _brushSize: 50
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &824934532842047751
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,9 +841,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 3383118465647570041}
-  _brush: {fileID: 1060691397426644875}
+  _brush: {fileID: 7334365465908810011}
   _brushSize: 55
   _paintType: 0
+  _valueForComplete: 0.95
 --- !u!114 &400622158576808023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1150,6 +1188,7 @@ GameObject:
   - component: {fileID: 8221562023520807807}
   - component: {fileID: 4171872941243219241}
   - component: {fileID: 1344723577963658369}
+  - component: {fileID: 8690413579656074733}
   m_Layer: 7
   m_Name: BigPan
   m_TagString: Untagged
@@ -1294,6 +1333,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.14131917}
   serializedVersion: 2
   m_Radius: 3.5250263
+--- !u!114 &8690413579656074733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159468195267561580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &1245856340591885911
 GameObject:
   m_ObjectHideFlags: 0
@@ -3697,6 +3752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dragableObject: {fileID: 3529839718403029983}
+  _autoRerunt: 1
 --- !u!61 &4573477902317711706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3760,6 +3816,37 @@ MonoBehaviour:
   _targetPosition: {fileID: 8460779182181342798}
   _moveDuration: 0.42
   _activeAfterMove: 0
+--- !u!1 &1581630341535999817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6009476738087570430}
+  m_Layer: 7
+  m_Name: PaintDecal (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6009476738087570430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581630341535999817}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.29, y: 1.61, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2922144175387654123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1743208841493743568
 GameObject:
   m_ObjectHideFlags: 0
@@ -4027,9 +4114,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 383569509970423878}
-  _brush: {fileID: 6323748471387945177}
+  _brush: {fileID: 6009476738087570430}
   _brushSize: 53
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &2441515568285231653
 GameObject:
   m_ObjectHideFlags: 0
@@ -4241,6 +4329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dragableObject: {fileID: 1973540603598365986}
+  _autoRerunt: 1
 --- !u!61 &1612815201714631591
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4485,9 +4574,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 879815346166583646}
-  _brush: {fileID: 6323748471387945177}
+  _brush: {fileID: 6009476738087570430}
   _brushSize: 53
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &2645512828606232272
 GameObject:
   m_ObjectHideFlags: 0
@@ -4501,6 +4591,7 @@ GameObject:
   - component: {fileID: 3861449868868204058}
   - component: {fileID: 7072909387148168786}
   - component: {fileID: 2119413112041976238}
+  - component: {fileID: 2023464639406721143}
   m_Layer: 7
   m_Name: Pedestal
   m_TagString: Untagged
@@ -4651,6 +4742,22 @@ MonoBehaviour:
   _disableScale: {x: 0.9, y: 0.9, z: 0.9}
   _transitDuration: 0.42
   _disableCollider: 0
+--- !u!114 &2023464639406721143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2645512828606232272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &2802357013836157896
 GameObject:
   m_ObjectHideFlags: 0
@@ -4728,6 +4835,7 @@ GameObject:
   - component: {fileID: 2460999396537179657}
   - component: {fileID: 6897711176187794780}
   - component: {fileID: 8690206451584922997}
+  - component: {fileID: 5411977913562058823}
   m_Layer: 7
   m_Name: BigPan
   m_TagString: Untagged
@@ -4878,6 +4986,22 @@ MonoBehaviour:
   _disableScale: {x: 0.9, y: 0.9, z: 0.9}
   _transitDuration: 0.42
   _disableCollider: 0
+--- !u!114 &5411977913562058823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2970081813186633286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &3168690534688652233
 GameObject:
   m_ObjectHideFlags: 0
@@ -4979,6 +5103,7 @@ MonoBehaviour:
   _brush: {fileID: 6323748471387945177}
   _brushSize: 50
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &3177097321413212352
 GameObject:
   m_ObjectHideFlags: 0
@@ -5111,6 +5236,38 @@ MonoBehaviour:
   _brush: {fileID: 6323748471387945177}
   _brushSize: 50
   _paintType: 1
+  _valueForComplete: 0.95
+--- !u!1 &3513845383719558528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7334365465908810011}
+  m_Layer: 7
+  m_Name: PaintDecal (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7334365465908810011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3513845383719558528}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.99, y: 5.45, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8563363520975413934}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
 --- !u!1 &3589522319141453671
 GameObject:
   m_ObjectHideFlags: 0
@@ -5247,6 +5404,7 @@ MonoBehaviour:
   _brush: {fileID: 6323748471387945177}
   _brushSize: 50
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &3699813716447939712
 GameObject:
   m_ObjectHideFlags: 0
@@ -5376,9 +5534,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 3033418700424968423}
-  _brush: {fileID: 6323748471387945177}
+  _brush: {fileID: 6009476738087570430}
   _brushSize: 44
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &4210299783372339749
 GameObject:
   m_ObjectHideFlags: 0
@@ -5478,9 +5637,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 2564854097218955698}
-  _brush: {fileID: 1060691397426644875}
+  _brush: {fileID: 7334365465908810011}
   _brushSize: 55
   _paintType: 0
+  _valueForComplete: 0.95
 --- !u!114 &5211772280320598663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5510,6 +5670,7 @@ GameObject:
   - component: {fileID: 3233218815771238150}
   - component: {fileID: 6598540468248117423}
   - component: {fileID: 4351870091314484527}
+  - component: {fileID: 6914507076636975135}
   m_Layer: 7
   m_Name: Knob
   m_TagString: Untagged
@@ -5660,6 +5821,22 @@ MonoBehaviour:
   _disableScale: {x: 0.9, y: 0.9, z: 0.9}
   _transitDuration: 0.42
   _disableCollider: 0
+--- !u!114 &6914507076636975135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4234493738054100516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &4315148145248628427
 GameObject:
   m_ObjectHideFlags: 0
@@ -5673,6 +5850,7 @@ GameObject:
   - component: {fileID: 1973540603598365986}
   - component: {fileID: 8692850550593858977}
   - component: {fileID: 7039710653937949163}
+  - component: {fileID: 223610058326602721}
   m_Layer: 7
   m_Name: SmallPan
   m_TagString: Untagged
@@ -5817,6 +5995,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.1}
   serializedVersion: 2
   m_Radius: 2.13
+--- !u!114 &223610058326602721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4315148145248628427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &4685003786554488915
 GameObject:
   m_ObjectHideFlags: 0
@@ -5892,6 +6086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dragableObject: {fileID: 8221562023520807807}
+  _autoRerunt: 1
 --- !u!61 &4234108695237518418
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6469,9 +6664,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 8410354172982466849}
-  _brush: {fileID: 6323748471387945177}
+  _brush: {fileID: 6009476738087570430}
   _brushSize: 44
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &6003778452925012518
 GameObject:
   m_ObjectHideFlags: 0
@@ -6914,6 +7110,7 @@ GameObject:
   - component: {fileID: 6463699394268224711}
   - component: {fileID: 2833385163438942739}
   - component: {fileID: 1600551797973782148}
+  - component: {fileID: 2120062322527311709}
   m_Layer: 7
   m_Name: Knob
   m_TagString: Untagged
@@ -7064,6 +7261,22 @@ MonoBehaviour:
   _disableScale: {x: 0.9, y: 0.9, z: 0.9}
   _transitDuration: 0.39
   _disableCollider: 0
+--- !u!114 &2120062322527311709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6617038682819341867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &6861356970090435677
 GameObject:
   m_ObjectHideFlags: 0
@@ -7167,7 +7380,7 @@ Transform:
   m_GameObject: {fileID: 6993230682619048794}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.99, y: 3.21, z: 0}
+  m_LocalPosition: {x: -1.99, y: 3.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7217,6 +7430,7 @@ GameObject:
   - component: {fileID: 4852827521923480515}
   - component: {fileID: 9091982182942059453}
   - component: {fileID: 4073558038885529925}
+  - component: {fileID: 6485147861430590668}
   m_Layer: 0
   m_Name: Stove
   m_TagString: Untagged
@@ -7371,6 +7585,22 @@ MonoBehaviour:
   _disableScale: {x: 0.9, y: 0.9, z: 0.9}
   _transitDuration: 0.39
   _disableCollider: 0
+--- !u!114 &6485147861430590668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7211842422507770266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &7426774401483876961
 GameObject:
   m_ObjectHideFlags: 0
@@ -7446,6 +7676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dragableObject: {fileID: 2833385163438942739}
+  _autoRerunt: 1
 --- !u!61 &8824859937575322022
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7575,6 +7806,7 @@ GameObject:
   - component: {fileID: 3529839718403029983}
   - component: {fileID: 3087914952066736761}
   - component: {fileID: 158323661225725405}
+  - component: {fileID: 5790039278574132049}
   m_Layer: 7
   m_Name: Pedestal
   m_TagString: Untagged
@@ -7719,6 +7951,22 @@ CircleCollider2D:
   m_Offset: {x: -0.000000022351742, y: -0.00000011920929}
   serializedVersion: 2
   m_Radius: 2.31
+--- !u!114 &5790039278574132049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7919411751030678289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &7993551983959175119
 GameObject:
   m_ObjectHideFlags: 0
@@ -7969,6 +8217,7 @@ MonoBehaviour:
   _brush: {fileID: 1060691397426644875}
   _brushSize: 50
   _paintType: 0
+  _valueForComplete: 0.95
 --- !u!114 &742859061058152318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8118,6 +8367,7 @@ GameObject:
   - component: {fileID: 1084542428984228299}
   - component: {fileID: 2885805237615225065}
   - component: {fileID: 604147792077586961}
+  - component: {fileID: 8593615688022824518}
   m_Layer: 7
   m_Name: Cleaner
   m_TagString: Untagged
@@ -8139,6 +8389,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6323748471387945177}
+  - {fileID: 6009476738087570430}
   m_Father: {fileID: 4108771332945174845}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5241796542592271672
@@ -8281,6 +8532,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d698ac41648149f8955866a757a3bb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8593615688022824518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8435564086023110478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 8300000, guid: e555366ba67dee04990e43939e615771, type: 3}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &8663771350382681533
 GameObject:
   m_ObjectHideFlags: 0

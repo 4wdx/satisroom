@@ -8,7 +8,6 @@ namespace CodeBase.Gameplay.Levels
     {
         public override event Action<bool> OnCompleted;
         public event Action<int> OnHealthChanged;
-        public event Action<bool> OnActionCommited;
 
         [SerializeField] private Task[] _tasks;
         [SerializeField] private int _health;
@@ -37,6 +36,7 @@ namespace CodeBase.Gameplay.Levels
             {
                 _tasks[_currentTaskIndex].OnComplete -= StartNextTask;
                 DragHandler.Instance.OnDamagedClick -= DecreaseHealth;
+                DragHandler.Instance.CancelDrag();
                 OnCompleted?.Invoke(false);
             }
         }
@@ -45,8 +45,10 @@ namespace CodeBase.Gameplay.Levels
         {
             _tasks[_currentTaskIndex].OnComplete -= StartNextTask;
             _damageTriggers[_currentTaskIndex].gameObject.SetActive(false);
+            if (_tasks[_currentTaskIndex] is not TimeDelayTask) 
+                _heartLevelEmotion.StartShow(true);
+            
             _currentTaskIndex++;
-            _heartLevelEmotion.StartShow(true);
             
             if (_currentTaskIndex < _tasks.Length)
             {
@@ -57,5 +59,8 @@ namespace CodeBase.Gameplay.Levels
             else
                 OnCompleted?.Invoke(true);
         }
+
+        private void OnDestroy() => 
+            DragHandler.Instance.OnDamagedClick -= DecreaseHealth;
     }
 }

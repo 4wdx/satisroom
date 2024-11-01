@@ -5,6 +5,7 @@ using CodeBase.Gameplay.UI;
 using CodeBase.Root;
 using CodeBase.Utils;
 
+using DG.Tweening;
 using UnityEngine;
 using YG;
 
@@ -23,6 +24,8 @@ namespace CodeBase.Gameplay.Root
         
         public void Initialize(GameplayExitInvoker gameplayExitInvoker, GameplayUIMediator uiMediator, int levelIndex)
         {
+            DOTween.KillAll();
+            
             _gameplayExitInvoker = gameplayExitInvoker;
             _uiMediator = uiMediator;
             _levelIndex = levelIndex;
@@ -58,12 +61,16 @@ namespace CodeBase.Gameplay.Root
                 data.Add(Const.LevelLoseMetricaName, _levelIndex.ToString());
                 YandexMetrica.Send(Const.LevelLoseMetricaName, data);
             }
-            
-            _uiMediator.ShowResultWindow(_levelIndex);
+
+            DOTween.KillAll();
+            _uiMediator.ShowResultWindow(result);
         }
 
-        private void UISceneExitHandle(ExitType exitType) => 
+        private void UISceneExitHandle(ExitType exitType)
+        {
+            DOTween.KillAll();
             _gameplayExitInvoker.InvokeExit(exitType);
+        }
 
         private void ForcedCloseLevelHandle()
         {

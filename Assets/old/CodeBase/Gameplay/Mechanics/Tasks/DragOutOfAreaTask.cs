@@ -6,6 +6,7 @@ namespace CodeBase.Gameplay.Mechanics
     public class DragOutOfAreaTask : Task
     {
         [SerializeField] private DragableObject _dragableObject;
+        [SerializeField] private bool _autoRerunt = true;
         
         private void OnValidate() => 
             GetComponent<Rigidbody2D>().isKinematic = true;
@@ -45,10 +46,14 @@ namespace CodeBase.Gameplay.Mechanics
         private void DisableDragableObject() => 
             _dragableObject.OnEndDrag -= StopTask;
 
-        private void ReturnToStartPosition() => 
+        private void ReturnToStartPosition()
+        {
+            if (_autoRerunt == false) return;
+            
             _dragableObject.transform.position = new Vector3(
                 transform.position.x,
                 transform.position.y,
-                _dragableObject.transform.position.z); 
+                _dragableObject.transform.position.z);
+        }
     }
 }

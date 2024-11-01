@@ -14,6 +14,7 @@ namespace CodeBase.Gameplay.Mechanics
         [SerializeField] private Transform _brush;
         [SerializeField] private int _brushSize;
         [SerializeField] private PaintType _paintType;
+        [SerializeField] private float _valueForComplete = 0.95f;
 
         private Texture2D _texture;
         private Sprite _newSprite;
@@ -33,7 +34,7 @@ namespace CodeBase.Gameplay.Mechanics
             
             foreach (Color pixel in _originalColors)
             {
-                if (pixel.a < 0.001)
+                if (pixel.a <= 0.001)
                     _clearPixelsCount++;
             }
             
@@ -104,7 +105,7 @@ namespace CodeBase.Gameplay.Mechanics
                 {
                     foreach (Color pixel in pixels)
                     {
-                        if (pixel.a < 0.001)
+                        if (pixel.a <= 0.001)
                             paintedPixels++;
                     }
                     break;
@@ -122,7 +123,7 @@ namespace CodeBase.Gameplay.Mechanics
             }
 
             print(paintedPixels + " / " + _originalColors.Length);
-            if (paintedPixels  > _originalColors.Length * 0.95)
+            if (paintedPixels  >= _originalColors.Length * _valueForComplete)
             {
                 switch (_paintType)
                 {

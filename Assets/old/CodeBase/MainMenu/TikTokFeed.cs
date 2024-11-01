@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine;
+using YG;
 
 namespace CodeBase.MainMenu
 {
@@ -21,8 +23,6 @@ namespace CodeBase.MainMenu
         private RectTransform _rectTransform;
         private Vector2 _startDragPosition;
 
-        [SerializeField] private int _blockCount;
-
         private void Start()
         {
             _rectTransform = GetComponent<RectTransform>();
@@ -35,19 +35,9 @@ namespace CodeBase.MainMenu
             _botPage.offsetMin = new Vector2(_rectTransform.offsetMax.x, -_height);
         }
 
-        public void ClearBlocklist() =>
-            _blockCount = 0;
-
-        public void Block() => 
-            _blockCount++;
-
-        public void Unlock() => 
-            _blockCount--;
-
         public void OnBeginDrag(PointerEventData eventData)
         {
             if (_automoving) return;
-            if (_blockCount != 0) return;
 
             _dragging = true;
             _startDragPosition = _rectTransform.anchoredPosition;
@@ -56,7 +46,6 @@ namespace CodeBase.MainMenu
         public void OnDrag(PointerEventData eventData)
         {
             if (_automoving) return;
-            if (_blockCount != 0) return;
 
             if (_dragging)
             {
@@ -81,7 +70,6 @@ namespace CodeBase.MainMenu
                 _dragging = false;
             }
         }
-
         private IEnumerator Swipe(float sign)
         {
             Vector2 targetPos;

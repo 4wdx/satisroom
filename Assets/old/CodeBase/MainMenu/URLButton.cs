@@ -10,7 +10,7 @@ namespace CodeBase.MainMenu
         {
             bool protectionEnabled = YandexGame.GetFlag(Const.ProtectionFlagName) != Const.ProtectionFlagKey;
             
-            gameObject.SetActive(protectionEnabled);
+            gameObject.SetActive(!protectionEnabled);
         }
 
         public void OpenTelegram()

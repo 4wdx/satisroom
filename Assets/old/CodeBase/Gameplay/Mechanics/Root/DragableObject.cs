@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace CodeBase.Gameplay.Mechanics
 {
+    [RequireComponent(typeof(ItemSoundModificator))]
     public class DragableObject : MonoBehaviour
     {
         public event Action OnStartDrag;

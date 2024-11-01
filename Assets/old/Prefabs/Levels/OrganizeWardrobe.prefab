@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 3719969320353876820}
   - component: {fileID: 6505024058313741910}
   - component: {fileID: 3970347158043442664}
+  - component: {fileID: 8772976719445068406}
   m_Layer: 6
   m_Name: Box-Drawer
   m_TagString: Untagged
@@ -142,6 +143,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _openedVisual: {fileID: 4603165812835582183}
   _closedVisual: {fileID: 3317500020704567663}
+--- !u!114 &8772976719445068406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473578362996225529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3390556e9d9b45b8bb087d028cc462a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: 3c4fe7ecd14c98f4595324cac2866329, type: 3}
 --- !u!1 &503472869948456204
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,6 +171,7 @@ GameObject:
   - component: {fileID: 2052236026228731826}
   - component: {fileID: 5696976862822647220}
   - component: {fileID: 2168758556166976740}
+  - component: {fileID: 6783173599544047081}
   m_Layer: 7
   m_Name: TidyWardrobe_0042_Towel_Blue
   m_TagString: Untagged
@@ -288,6 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &2052236026228731826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,8 +331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -342,6 +356,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 1
   _sortingOrderDelta: 10
+--- !u!114 &6783173599544047081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503472869948456204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &613576030928687666
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,6 +387,7 @@ GameObject:
   - component: {fileID: 6771608886813915915}
   - component: {fileID: 8099797912775796852}
   - component: {fileID: 7937668369173732926}
+  - component: {fileID: 7681988188850121209}
   m_Layer: 7
   m_Name: TidyWardrobe_0031_Shoes1
   m_TagString: Untagged
@@ -488,6 +519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &6771608886813915915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,8 +547,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -542,6 +572,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &7681988188850121209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613576030928687666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &686984406504441895
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,6 +603,7 @@ GameObject:
   - component: {fileID: 7122772613559514384}
   - component: {fileID: 9107713687763078339}
   - component: {fileID: 592722385337946428}
+  - component: {fileID: 4473059013760570192}
   m_Layer: 7
   m_Name: TidyWardrobe_0008_Dress2_Hanged
   m_TagString: Untagged
@@ -688,6 +735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &7122772613559514384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,8 +763,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -742,6 +788,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &4473059013760570192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686984406504441895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &699616359066976042
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,6 +819,7 @@ GameObject:
   - component: {fileID: 2869453313554019214}
   - component: {fileID: 2871709192059132079}
   - component: {fileID: 2867504987471942627}
+  - component: {fileID: 6120538916780085467}
   m_Layer: 7
   m_Name: TidyWardrobe_0050_Sock2
   m_TagString: Untagged
@@ -888,6 +951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &2869453313554019214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -915,8 +979,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -942,6 +1004,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &6120538916780085467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699616359066976042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &706564496708735498
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,6 +1035,7 @@ GameObject:
   - component: {fileID: 5272892284745675287}
   - component: {fileID: 5226978587016584535}
   - component: {fileID: 7395517427205265507}
+  - component: {fileID: 7498362892496395146}
   m_Layer: 7
   m_Name: TidyWardrobe_0040_Towel_Green (1)
   m_TagString: Untagged
@@ -1088,6 +1167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &5272892284745675287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1115,8 +1195,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -1142,6 +1220,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 1
   _sortingOrderDelta: 10
+--- !u!114 &7498362892496395146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706564496708735498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &793901432993935031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,6 +1344,7 @@ GameObject:
   - component: {fileID: 866826701172222944}
   - component: {fileID: 8199055794938928492}
   - component: {fileID: 2806917116565061035}
+  - component: {fileID: 2652355979193673276}
   m_Layer: 7
   m_Name: TidyWardrobe_0019_Bag1
   m_TagString: Untagged
@@ -1381,6 +1476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &866826701172222944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1408,8 +1504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -1435,6 +1529,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &2652355979193673276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317958743687261127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &1457726654599982891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1450,6 +1560,7 @@ GameObject:
   - component: {fileID: 5577563787123185953}
   - component: {fileID: 2435087846268125697}
   - component: {fileID: 8059929642745038277}
+  - component: {fileID: 4673847488781975632}
   m_Layer: 7
   m_Name: TidyWardrobe_0044_Clothes2
   m_TagString: Untagged
@@ -1581,6 +1692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &5577563787123185953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1608,8 +1720,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -1635,6 +1745,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &4673847488781975632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457726654599982891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &1513906172013583534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1762,6 +1888,7 @@ GameObject:
   - component: {fileID: 6491201723122121695}
   - component: {fileID: 3083601303249948646}
   - component: {fileID: 4921846329199830141}
+  - component: {fileID: 807691663855443242}
   m_Layer: 6
   m_Name: Box-Sock
   m_TagString: Untagged
@@ -1861,6 +1988,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _openedVisual: {fileID: 4036502169116208015}
   _closedVisual: {fileID: 7153084599873464173}
+--- !u!114 &807691663855443242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904261599647997456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3390556e9d9b45b8bb087d028cc462a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: 3c4fe7ecd14c98f4595324cac2866329, type: 3}
 --- !u!1 &2001658536472158588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1876,6 +2016,7 @@ GameObject:
   - component: {fileID: 8842536623999285270}
   - component: {fileID: 911458044474791092}
   - component: {fileID: 7666128474399428905}
+  - component: {fileID: 3391033697580225815}
   m_Layer: 7
   m_Name: TidyWardrobe_0046_Clothes4
   m_TagString: Untagged
@@ -2007,6 +2148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &8842536623999285270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2034,8 +2176,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -2061,6 +2201,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &3391033697580225815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001658536472158588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &2062704228934872138
 GameObject:
   m_ObjectHideFlags: 0
@@ -2371,6 +2527,7 @@ GameObject:
   - component: {fileID: 5768581255266313214}
   - component: {fileID: 3431835908342041879}
   - component: {fileID: 6086073019559241097}
+  - component: {fileID: 8732756107554757991}
   m_Layer: 7
   m_Name: TidyWardrobe_0024_Skirt1
   m_TagString: Untagged
@@ -2502,6 +2659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &5768581255266313214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2529,8 +2687,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -2556,6 +2712,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &8732756107554757991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3027800151750302565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &3039482288421769092
 GameObject:
   m_ObjectHideFlags: 0
@@ -2571,6 +2743,7 @@ GameObject:
   - component: {fileID: 5587950845313874651}
   - component: {fileID: 8521166665508595524}
   - component: {fileID: 5131104272663437881}
+  - component: {fileID: 7494501023942621294}
   m_Layer: 7
   m_Name: TidyWardrobe_0049_Sock3
   m_TagString: Untagged
@@ -2702,6 +2875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &5587950845313874651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2729,8 +2903,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -2756,6 +2928,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &7494501023942621294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3039482288421769092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &3039894594466647172
 GameObject:
   m_ObjectHideFlags: 0
@@ -3047,6 +3235,7 @@ GameObject:
   - component: {fileID: 9187256344638200752}
   - component: {fileID: 8035755657651796864}
   - component: {fileID: 455201719314020460}
+  - component: {fileID: 7259740576312670103}
   m_Layer: 7
   m_Name: TidyWardrobe_0041_Towel_Pink (1)
   m_TagString: Untagged
@@ -3178,6 +3367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &9187256344638200752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3205,8 +3395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -3232,6 +3420,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 1
   _sortingOrderDelta: 10
+--- !u!114 &7259740576312670103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3441245425362810300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &3454901606093808082
 GameObject:
   m_ObjectHideFlags: 0
@@ -3278,6 +3482,7 @@ GameObject:
   - component: {fileID: 8601997519195860326}
   - component: {fileID: 9016310310643067424}
   - component: {fileID: 8574647458050902282}
+  - component: {fileID: 4828398151972776387}
   m_Layer: 7
   m_Name: TidyWardrobe_0020_Shoes_2
   m_TagString: Untagged
@@ -3409,6 +3614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &8601997519195860326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3436,8 +3642,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -3463,6 +3667,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &4828398151972776387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3725663620582213976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &3811925076986326690
 GameObject:
   m_ObjectHideFlags: 0
@@ -3573,6 +3793,7 @@ GameObject:
   - component: {fileID: 47385049794357611}
   - component: {fileID: 2612846752862048593}
   - component: {fileID: 9100012871400501421}
+  - component: {fileID: 8999486164856038205}
   m_Layer: 7
   m_Name: TidyWardrobe_0048_Sock4
   m_TagString: Untagged
@@ -3704,6 +3925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &47385049794357611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3731,8 +3953,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -3758,6 +3978,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &8999486164856038205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4196364975198595697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &4357431529436748326
 GameObject:
   m_ObjectHideFlags: 0
@@ -3773,6 +4009,7 @@ GameObject:
   - component: {fileID: 1975212185598208184}
   - component: {fileID: 6925356899260071650}
   - component: {fileID: 3666650265545490289}
+  - component: {fileID: 6920085966539719825}
   m_Layer: 7
   m_Name: TidyWardrobe_0001_Shirt1_Hanged
   m_TagString: Untagged
@@ -3904,6 +4141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &1975212185598208184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3931,8 +4169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -3958,6 +4194,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &6920085966539719825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4357431529436748326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &4396826938658053311
 GameObject:
   m_ObjectHideFlags: 0
@@ -3973,6 +4225,7 @@ GameObject:
   - component: {fileID: 8293002905473495824}
   - component: {fileID: 4299698742674728553}
   - component: {fileID: 59518340166573988}
+  - component: {fileID: 3157887554070832446}
   m_Layer: 7
   m_Name: TidyWardrobe_0042_Towel_Blue (1)
   m_TagString: Untagged
@@ -4104,6 +4357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &8293002905473495824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4131,8 +4385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -4158,6 +4410,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 1
   _sortingOrderDelta: 10
+--- !u!114 &3157887554070832446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4396826938658053311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &4423582919519240996
 GameObject:
   m_ObjectHideFlags: 0
@@ -4173,6 +4441,7 @@ GameObject:
   - component: {fileID: 1938664150297244062}
   - component: {fileID: 3758499810441668440}
   - component: {fileID: 3411699948077876210}
+  - component: {fileID: 2794407253399930195}
   m_Layer: 7
   m_Name: TidyWardrobe_0041_Towel_Pink
   m_TagString: Untagged
@@ -4304,6 +4573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &1938664150297244062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4331,8 +4601,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -4358,6 +4626,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 1
   _sortingOrderDelta: 10
+--- !u!114 &2794407253399930195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4423582919519240996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &4603165812835582183
 GameObject:
   m_ObjectHideFlags: 0
@@ -4505,6 +4789,7 @@ GameObject:
   - component: {fileID: 8878193075586821245}
   - component: {fileID: 8423123430482949433}
   - component: {fileID: 3691787460037673916}
+  - component: {fileID: 1162083595884288895}
   m_Layer: 7
   m_Name: TidyWardrobe_0021_Hat1
   m_TagString: Untagged
@@ -4636,6 +4921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &8878193075586821245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4663,8 +4949,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -4690,6 +4974,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &1162083595884288895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4885933320184958573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &5086483023774847789
 GameObject:
   m_ObjectHideFlags: 0
@@ -4816,6 +5116,7 @@ GameObject:
   - component: {fileID: 2203237075584158632}
   - component: {fileID: 5959608536704438412}
   - component: {fileID: 284563241768309855}
+  - component: {fileID: 7093201541510904231}
   m_Layer: 7
   m_Name: TidyWardrobe_0039_Bag-3
   m_TagString: Untagged
@@ -4947,6 +5248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &2203237075584158632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4974,8 +5276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -5001,6 +5301,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &7093201541510904231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5145976819501054786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &5283145276132589978
 GameObject:
   m_ObjectHideFlags: 0
@@ -5115,6 +5431,7 @@ GameObject:
   - component: {fileID: 308231145310965363}
   - component: {fileID: 5337326059242106900}
   - component: {fileID: 9187393013359964049}
+  - component: {fileID: 8481086446626617006}
   m_Layer: 7
   m_Name: TidyWardrobe_0038_Bag4
   m_TagString: Untagged
@@ -5246,6 +5563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &308231145310965363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5273,8 +5591,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -5300,6 +5616,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &8481086446626617006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5312246844089695952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &5506411886096299077
 GameObject:
   m_ObjectHideFlags: 0
@@ -5593,6 +5925,7 @@ GameObject:
   - component: {fileID: 8625981739820546044}
   - component: {fileID: 617095724141626853}
   - component: {fileID: 9193366136053973075}
+  - component: {fileID: 4544988979468099977}
   m_Layer: 7
   m_Name: TidyWardrobe_0018_Bag2
   m_TagString: Untagged
@@ -5724,6 +6057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &8625981739820546044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5751,8 +6085,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -5778,6 +6110,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &4544988979468099977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6341793035038535547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &6520043052666795404
 GameObject:
   m_ObjectHideFlags: 0
@@ -5877,6 +6225,7 @@ GameObject:
   - component: {fileID: 77170891560684456}
   - component: {fileID: 5570370541099906017}
   - component: {fileID: 7591151829340897814}
+  - component: {fileID: 6931605520930430802}
   m_Layer: 7
   m_Name: TidyWardrobe_0025_Skirt2
   m_TagString: Untagged
@@ -6008,6 +6357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &77170891560684456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6035,8 +6385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -6062,6 +6410,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &6931605520930430802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6540109753286499729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &6554868887241792129
 GameObject:
   m_ObjectHideFlags: 0
@@ -6118,6 +6482,7 @@ GameObject:
   - component: {fileID: 4363454163450385658}
   - component: {fileID: 2704351403579427778}
   - component: {fileID: 4197243684235249245}
+  - component: {fileID: 3147841500539581302}
   m_Layer: 7
   m_Name: TidyWardrobe_0040_Towel_Green
   m_TagString: Untagged
@@ -6249,6 +6614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &4363454163450385658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6276,8 +6642,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -6303,6 +6667,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 1
   _sortingOrderDelta: 10
+--- !u!114 &3147841500539581302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6735112952760081855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &6840719200973153863
 GameObject:
   m_ObjectHideFlags: 0
@@ -6318,6 +6698,7 @@ GameObject:
   - component: {fileID: 1616519844775152968}
   - component: {fileID: 2443954126987413126}
   - component: {fileID: 2031042207234843616}
+  - component: {fileID: 558396104087182343}
   m_Layer: 7
   m_Name: TidyWardrobe_0022_Hat2
   m_TagString: Untagged
@@ -6449,6 +6830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &1616519844775152968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6476,8 +6858,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -6503,6 +6883,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &558396104087182343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6840719200973153863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &6859224931138632913
 GameObject:
   m_ObjectHideFlags: 0
@@ -6518,6 +6914,7 @@ GameObject:
   - component: {fileID: 1060861507747760039}
   - component: {fileID: 7305309669458816807}
   - component: {fileID: 2873246745154364434}
+  - component: {fileID: 102083677893849395}
   m_Layer: 7
   m_Name: TidyWardrobe_0003_Shirt2_Hanged
   m_TagString: Untagged
@@ -6649,6 +7046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &1060861507747760039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6676,8 +7074,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -6703,6 +7099,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &102083677893849395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6859224931138632913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &7014243712245953899
 GameObject:
   m_ObjectHideFlags: 0
@@ -6932,6 +7344,7 @@ GameObject:
   - component: {fileID: 3074834905771897865}
   - component: {fileID: 2302091314466891118}
   - component: {fileID: 3871236383962988409}
+  - component: {fileID: 6570164968115761580}
   m_Layer: 7
   m_Name: TidyWardrobe_0000_Dress1_Hanged
   m_TagString: Untagged
@@ -7063,6 +7476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &3074834905771897865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7090,8 +7504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -7117,6 +7529,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &6570164968115761580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7211120420758005987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &7281199292304779818
 GameObject:
   m_ObjectHideFlags: 0
@@ -7708,6 +8136,7 @@ GameObject:
   - component: {fileID: 1039749343890751922}
   - component: {fileID: 7586092187109631631}
   - component: {fileID: 6877531012099058697}
+  - component: {fileID: 2074850820593008336}
   m_Layer: 7
   m_Name: TidyWardrobe_0045_Clothes3
   m_TagString: Untagged
@@ -7839,6 +8268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &1039749343890751922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7866,8 +8296,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 0}
-  _baseScale: {x: 1, y: 1, z: 1}
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -7893,3 +8321,19 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &2074850820593008336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9087664464446924198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}

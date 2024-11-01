@@ -18,6 +18,7 @@ namespace CodeBase.Gameplay.Mechanics
         
         private DragableObject _dragableObject;
         private float _zPos;
+        private bool _isActive;
 
         private void Awake()
         {
@@ -29,11 +30,22 @@ namespace CodeBase.Gameplay.Mechanics
         
         private void Update()
         {
+            if (_isActive == false) return;
+            
             if (Input.GetKeyDown(KeyCode.Mouse0)) OnStartHandle();
 
             if (Input.GetKey(KeyCode.Mouse0)) InProgressHandle();
 
             if (Input.GetKeyUp(KeyCode.Mouse0)) OnEndHandle();
+        }
+
+        public void Enable() => 
+            _isActive = true;
+
+        public void Disable()
+        {
+            _isActive = false;
+            CancelDrag();
         }
 
         public void CancelDrag()

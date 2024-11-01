@@ -83,6 +83,7 @@ MonoBehaviour:
   _brush: {fileID: 7007240665644244857}
   _brushSize: 44
   _paintType: 0
+  _valueForComplete: 0.95
 --- !u!1 &73845940747210536
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,12 +157,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 56
-  m_Sprite: {fileID: 21300000, guid: b5cf747f0633ed74b894b7b7d9a84fd1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 37ae460db83d4d64c9894d6641ebb5a5, type: 3}
   m_Color: {r: 0.6132076, g: 0.4400619, b: 0.3268512, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.8071876, y: 11.62}
+  m_Size: {x: 7.761797, y: 11.62}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -241,7 +242,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 30
   m_Sprite: {fileID: 21300000, guid: 99064b011a43c53418e11112a6c85040, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.83137256}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -334,6 +335,7 @@ MonoBehaviour:
   _brush: {fileID: 7007240665644244857}
   _brushSize: 44
   _paintType: 0
+  _valueForComplete: 0.95
 --- !u!1 &309450421409793400
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,6 +418,7 @@ MonoBehaviour:
   _brush: {fileID: 9073148689505732797}
   _brushSize: 45
   _paintType: 0
+  _valueForComplete: 0.95
 --- !u!1 &570614573999728074
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,6 +716,7 @@ MonoBehaviour:
   _brush: {fileID: 7509375383753833396}
   _brushSize: 46
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!114 &8022120934005113399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -909,12 +913,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 32
-  m_Sprite: {fileID: 21300000, guid: 110570fd8eaecb944a931081d7c2a83e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b35249b0b8de2e148993410328c0e137, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.8, y: 11.643149}
+  m_Size: {x: 3.885547, y: 5.7999997}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -970,6 +974,7 @@ MonoBehaviour:
   _brush: {fileID: 7509375383753833396}
   _brushSize: 42
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!114 &3299296710823194366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1092,6 +1097,7 @@ MonoBehaviour:
   _brush: {fileID: 7007240665644244857}
   _brushSize: 44
   _paintType: 0
+  _valueForComplete: 0.95
 --- !u!1 &2827597858479387972
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,6 +1182,7 @@ MonoBehaviour:
   _brush: {fileID: 9073148689505732797}
   _brushSize: 45
   _paintType: 0
+  _valueForComplete: 0.95
 --- !u!1 &2895333460950367183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,6 +1233,7 @@ MonoBehaviour:
   _brush: {fileID: 5431356496140374200}
   _brushSize: 42
   _paintType: 0
+  _valueForComplete: 0.95
 --- !u!114 &3676890175257171866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1332,7 +1340,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 41
   m_Sprite: {fileID: 21300000, guid: 99064b011a43c53418e11112a6c85040, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.83137256}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1392,6 +1400,7 @@ MonoBehaviour:
   _brush: {fileID: 5431356496140374200}
   _brushSize: 42
   _paintType: 0
+  _valueForComplete: 0.95
 --- !u!114 &1515246464893086722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1674,6 +1683,7 @@ MonoBehaviour:
   _brush: {fileID: 9073148689505732797}
   _brushSize: 45
   _paintType: 0
+  _valueForComplete: 0.95
 --- !u!1 &3842672207456910158
 GameObject:
   m_ObjectHideFlags: 0
@@ -1903,12 +1913,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 43
-  m_Sprite: {fileID: 21300000, guid: b5cf747f0633ed74b894b7b7d9a84fd1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 37ae460db83d4d64c9894d6641ebb5a5, type: 3}
   m_Color: {r: 0.8773585, g: 0.78506464, b: 0.7242346, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.8071876, y: 11.62}
+  m_Size: {x: 8.15, y: 12.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1987,12 +1997,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 52
-  m_Sprite: {fileID: 21300000, guid: 110570fd8eaecb944a931081d7c2a83e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b35249b0b8de2e148993410328c0e137, type: 3}
   m_Color: {r: 0.6132076, g: 0.4400619, b: 0.3268512, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.8, y: 11.643149}
+  m_Size: {x: 3.885547, y: 5.7999997}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2011,6 +2021,7 @@ GameObject:
   - component: {fileID: 4039879565182822906}
   - component: {fileID: 3331077620281858382}
   - component: {fileID: 6360204401424831999}
+  - component: {fileID: 8418234472085714707}
   m_Layer: 7
   m_Name: WashDoormat_0009_Wipe
   m_TagString: Untagged
@@ -2156,6 +2167,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d698ac41648149f8955866a757a3bb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8418234472085714707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600353215701403143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 8300000, guid: f141f59aac72be54ba3b34ae95d4a6d4, type: 3}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &4886353840595753652
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,6 +2238,7 @@ GameObject:
   - component: {fileID: 8941625349474722992}
   - component: {fileID: 2035065201380183705}
   - component: {fileID: 8327728112309966462}
+  - component: {fileID: 6226585670930863606}
   m_Layer: 7
   m_Name: WashDoormat_0005_Scrubber
   m_TagString: Untagged
@@ -2357,6 +2385,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d698ac41648149f8955866a757a3bb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6226585670930863606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4899523216707625024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 8300000, guid: 12150d85ec7e3b24dbe8c7e14e2b14aa, type: 3}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &5202360335760106915
 GameObject:
   m_ObjectHideFlags: 0
@@ -2461,12 +2505,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 33
-  m_Sprite: {fileID: 21300000, guid: b5cf747f0633ed74b894b7b7d9a84fd1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 37ae460db83d4d64c9894d6641ebb5a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.8071876, y: 11.62}
+  m_Size: {x: 8.15, y: 12.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2545,12 +2589,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 45
-  m_Sprite: {fileID: 21300000, guid: b5cf747f0633ed74b894b7b7d9a84fd1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 37ae460db83d4d64c9894d6641ebb5a5, type: 3}
   m_Color: {r: 0.8773585, g: 0.78506464, b: 0.7242346, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.8071876, y: 11.62}
+  m_Size: {x: 7.761797, y: 11.62}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2714,7 +2758,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 51
   m_Sprite: {fileID: 21300000, guid: 99064b011a43c53418e11112a6c85040, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.83137256}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2778,6 +2822,7 @@ GameObject:
   - component: {fileID: 2519901040915753310}
   - component: {fileID: 6179468579846131675}
   - component: {fileID: 222605369978270210}
+  - component: {fileID: 8639235915440826733}
   m_Layer: 7
   m_Name: WashDoormat_0000_Spray
   m_TagString: Untagged
@@ -2924,6 +2969,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d698ac41648149f8955866a757a3bb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8639235915440826733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7150289982709571288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 8300000, guid: 6a28f535f7cb4384cbcbcecadd0a3697, type: 3}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &7300832481723278810
 GameObject:
   m_ObjectHideFlags: 0
@@ -2997,12 +3058,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 53
-  m_Sprite: {fileID: 21300000, guid: b5cf747f0633ed74b894b7b7d9a84fd1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 37ae460db83d4d64c9894d6641ebb5a5, type: 3}
   m_Color: {r: 0.6132076, g: 0.4400619, b: 0.3268512, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.8071876, y: 11.62}
+  m_Size: {x: 8.15, y: 12.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3333,12 +3394,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 35
-  m_Sprite: {fileID: 21300000, guid: b5cf747f0633ed74b894b7b7d9a84fd1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 37ae460db83d4d64c9894d6641ebb5a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.8071876, y: 11.62}
+  m_Size: {x: 7.761797, y: 11.62}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3540,6 +3601,7 @@ MonoBehaviour:
   _brush: {fileID: 5431356496140374200}
   _brushSize: 42
   _paintType: 0
+  _valueForComplete: 0.95
 --- !u!114 &7402603276854983159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3764,12 +3826,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 42
-  m_Sprite: {fileID: 21300000, guid: 110570fd8eaecb944a931081d7c2a83e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b35249b0b8de2e148993410328c0e137, type: 3}
   m_Color: {r: 0.8773585, g: 0.78506464, b: 0.7242346, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.8, y: 11.643149}
+  m_Size: {x: 3.885547, y: 5.7999997}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3909,6 +3971,7 @@ MonoBehaviour:
   _brush: {fileID: 7509375383753833396}
   _brushSize: 40
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!114 &4637383932766779605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3960,6 +4023,7 @@ GameObject:
   - component: {fileID: 8587704247288128441}
   - component: {fileID: 8425603062030046536}
   - component: {fileID: 14979897280734903}
+  - component: {fileID: 2286787005573220054}
   m_Layer: 7
   m_Name: WashDoormat_0002_Pipe-
   m_TagString: Untagged
@@ -4142,3 +4206,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d698ac41648149f8955866a757a3bb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2286787005573220054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9000247230775707351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 8300000, guid: c6863ec9d52259b47875754d6d9992bd, type: 3}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}

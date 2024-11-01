@@ -48,6 +48,7 @@ MonoBehaviour:
   _brush: {fileID: 1077551378494824765}
   _brushSize: 32
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &135769471237804249
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,6 +201,7 @@ MonoBehaviour:
   _brush: {fileID: 9173256392694939990}
   _brushSize: 35
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &222937233753887634
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,6 +253,7 @@ MonoBehaviour:
   _brush: {fileID: 5748021991353979518}
   _brushSize: 30
   _paintType: 0
+  _valueForComplete: 0.95
 --- !u!114 &1598915167386712985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1032,6 +1035,7 @@ GameObject:
   - component: {fileID: 4165643513221676967}
   - component: {fileID: 4459307568007396107}
   - component: {fileID: 897129609865165134}
+  - component: {fileID: 339879459795151376}
   m_Layer: 7
   m_Name: ShaveLeg_0007_Sock_1
   m_TagString: Untagged
@@ -1182,6 +1186,22 @@ MonoBehaviour:
   _disableScale: {x: 1, y: 1, z: 1}
   _transitDuration: 0.35
   _disableCollider: 0
+--- !u!114 &339879459795151376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026923792811318609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &1075102050362081311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,6 +1254,7 @@ GameObject:
   - component: {fileID: 7582668479763392530}
   - component: {fileID: 3793068658771925775}
   - component: {fileID: 1092331153403776298}
+  - component: {fileID: 1954553485553868619}
   m_Layer: 7
   m_Name: ShaveLeg_0005_ElectricShaver
   m_TagString: Untagged
@@ -1379,6 +1400,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d698ac41648149f8955866a757a3bb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1954553485553868619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649239631301865122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 8300000, guid: 125e9ed61d8f9b24b90717ab68cb46ec, type: 3}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &1771062641460351550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,6 +1460,7 @@ GameObject:
   - component: {fileID: 7261461466113209926}
   - component: {fileID: 332604811492305369}
   - component: {fileID: 2071233257264858427}
+  - component: {fileID: 2040739037934040668}
   m_Layer: 7
   m_Name: ShaveLeg_0006_Shaver
   m_TagString: Untagged
@@ -1568,6 +1606,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d698ac41648149f8955866a757a3bb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2040739037934040668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941701218867465375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 8300000, guid: 16431e376fdce7344a77bb4d0e0d6504, type: 3}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &2014447121357884720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1669,6 +1723,7 @@ MonoBehaviour:
   _brush: {fileID: 2911290594279149371}
   _brushSize: 41
   _paintType: 0
+  _valueForComplete: 0.95
 --- !u!1 &2015855660219530189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1775,6 +1830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dragableObject: {fileID: 4459307568007396107}
+  _autoRerunt: 1
 --- !u!61 &8211574796889246245
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2099,6 +2155,7 @@ GameObject:
   - component: {fileID: 895789711179968795}
   - component: {fileID: 2263345505517965354}
   - component: {fileID: 2535027251076778125}
+  - component: {fileID: 8332070752013523447}
   m_Layer: 7
   m_Name: Sock1
   m_TagString: Untagged
@@ -2249,6 +2306,22 @@ MonoBehaviour:
   _disableScale: {x: 1.5, y: 1.5, z: 1.5}
   _transitDuration: 0.3
   _disableCollider: 0
+--- !u!114 &8332070752013523447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2764982770104362953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &2777206865989585988
 GameObject:
   m_ObjectHideFlags: 0
@@ -2436,6 +2509,7 @@ GameObject:
   - component: {fileID: 8323752905102205540}
   - component: {fileID: 572643237591350128}
   - component: {fileID: 8867334875402840593}
+  - component: {fileID: 620074323221882566}
   m_Layer: 7
   m_Name: ShaveLeg_0008_Sock_2
   m_TagString: Untagged
@@ -2586,6 +2660,22 @@ MonoBehaviour:
   _disableScale: {x: 1, y: 1, z: 1}
   _transitDuration: 0.35
   _disableCollider: 0
+--- !u!114 &620074323221882566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2959379003503912780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &3131815262413879596
 GameObject:
   m_ObjectHideFlags: 0
@@ -2687,6 +2777,7 @@ MonoBehaviour:
   _brush: {fileID: 9031174816680388247}
   _brushSize: 44
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &3178346054048068042
 GameObject:
   m_ObjectHideFlags: 0
@@ -2987,6 +3078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dragableObject: {fileID: 572643237591350128}
+  _autoRerunt: 1
 --- !u!61 &7959118424639157159
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3182,6 +3274,7 @@ MonoBehaviour:
   _brush: {fileID: 2911290594279149371}
   _brushSize: 41
   _paintType: 0
+  _valueForComplete: 0.95
 --- !u!1 &4059445379887427846
 GameObject:
   m_ObjectHideFlags: 0
@@ -3351,6 +3444,7 @@ MonoBehaviour:
   _brush: {fileID: 9134018299025792784}
   _brushSize: 39
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &4127574273032623204
 GameObject:
   m_ObjectHideFlags: 0
@@ -3515,6 +3609,7 @@ MonoBehaviour:
   _brush: {fileID: 1077551378494824765}
   _brushSize: 32
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &4298849478263646856
 GameObject:
   m_ObjectHideFlags: 0
@@ -3563,6 +3658,7 @@ MonoBehaviour:
   _brush: {fileID: 1077551378494824765}
   _brushSize: 32
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &4486059067396265942
 GameObject:
   m_ObjectHideFlags: 0
@@ -3661,6 +3757,7 @@ GameObject:
   - component: {fileID: 2262671935958168424}
   - component: {fileID: 6042275221304324697}
   - component: {fileID: 4769576838334257280}
+  - component: {fileID: 3303638267769252124}
   m_Layer: 7
   m_Name: ShaveLeg_0013_Showerhead
   m_TagString: Untagged
@@ -3827,6 +3924,22 @@ MonoBehaviour:
   _stateWhileDraging: 1
   _disableHandle: 0
   _stateAfterDisable: 0
+--- !u!114 &3303638267769252124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4526992880687544828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 8300000, guid: b6c6dad4cda855849bcbb519083f0442, type: 3}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &4580147575823709753
 GameObject:
   m_ObjectHideFlags: 0
@@ -3976,6 +4089,7 @@ GameObject:
   - component: {fileID: 5431343319288970719}
   - component: {fileID: 4965188634899119162}
   - component: {fileID: 8238004275351767213}
+  - component: {fileID: 4337459299312241065}
   m_Layer: 7
   m_Name: ShaveLeg_0011_WhiteningCream
   m_TagString: Untagged
@@ -4121,6 +4235,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d698ac41648149f8955866a757a3bb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4337459299312241065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4602938126958091198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 8300000, guid: daadabb228d123043865d91b3294fa7a, type: 3}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &4707080423274577260
 GameObject:
   m_ObjectHideFlags: 0
@@ -4757,6 +4887,7 @@ MonoBehaviour:
   _brush: {fileID: 9173256392694939990}
   _brushSize: 35
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &5928903454727866133
 GameObject:
   m_ObjectHideFlags: 0
@@ -4907,6 +5038,7 @@ MonoBehaviour:
   _brush: {fileID: 1077551378494824765}
   _brushSize: 32
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &6005227297407423964
 GameObject:
   m_ObjectHideFlags: 0
@@ -4921,6 +5053,7 @@ GameObject:
   - component: {fileID: 3127858594852337648}
   - component: {fileID: 5952185435970450278}
   - component: {fileID: 6688727073017667912}
+  - component: {fileID: 5932574724481125033}
   m_Layer: 7
   m_Name: ShaveLeg_0004_IPL
   m_TagString: Untagged
@@ -5085,6 +5218,22 @@ MonoBehaviour:
   _stateWhileDraging: 1
   _disableHandle: 0
   _stateAfterDisable: 0
+--- !u!114 &5932574724481125033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6005227297407423964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 8300000, guid: 15736defb3c14134fbec600bed9b8911, type: 3}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &6500767883349561574
 GameObject:
   m_ObjectHideFlags: 0
@@ -5098,6 +5247,7 @@ GameObject:
   - component: {fileID: 7526208763610038568}
   - component: {fileID: 5194760407752613050}
   - component: {fileID: 2766851094984548428}
+  - component: {fileID: 5579937995073133438}
   m_Layer: 7
   m_Name: Sock2
   m_TagString: Untagged
@@ -5248,6 +5398,22 @@ MonoBehaviour:
   _disableScale: {x: 1.5, y: 1.5, z: 1.5}
   _transitDuration: 0.3
   _disableCollider: 0
+--- !u!114 &5579937995073133438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6500767883349561574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &6502118889524406035
 GameObject:
   m_ObjectHideFlags: 0
@@ -5386,6 +5552,7 @@ MonoBehaviour:
   _brush: {fileID: 9134018299025792784}
   _brushSize: 39
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &6613080084166986590
 GameObject:
   m_ObjectHideFlags: 0
@@ -5852,6 +6019,7 @@ MonoBehaviour:
   _brush: {fileID: 9031174816680388247}
   _brushSize: 44
   _paintType: 1
+  _valueForComplete: 0.95
 --- !u!1 &7276527830974938426
 GameObject:
   m_ObjectHideFlags: 0
@@ -6164,6 +6332,7 @@ GameObject:
   - component: {fileID: 6893602561672396151}
   - component: {fileID: 1373134703089765765}
   - component: {fileID: 3906872395772343050}
+  - component: {fileID: 3645346903374507612}
   m_Layer: 7
   m_Name: ShaveLeg_0001_ShavingCream
   m_TagString: Untagged
@@ -6309,6 +6478,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d698ac41648149f8955866a757a3bb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3645346903374507612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8279939278363103873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 8300000, guid: 6a28f535f7cb4384cbcbcecadd0a3697, type: 3}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &8462334709087943387
 GameObject:
   m_ObjectHideFlags: 0

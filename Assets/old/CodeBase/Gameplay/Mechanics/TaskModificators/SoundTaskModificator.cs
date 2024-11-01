@@ -13,9 +13,13 @@ namespace CodeBase.Gameplay.Mechanics
         private AudioSource _audioSource;
         private Task _task;
 
-        private void Start()
+        private void Awake()
         {
             _audioSource = GetComponent<AudioSource>();
+            if (_audioSource == null)
+                _audioSource = gameObject.AddComponent<AudioSource>();
+
+            _audioSource.playOnAwake = false;
         }
 
         public void Initialize(Task task)

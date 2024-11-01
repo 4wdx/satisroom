@@ -6,6 +6,7 @@ namespace CodeBase.Gameplay.Mechanics
 {
     public class BoxSlot : ItemSlot, IClickable
     {
+        public event Action OnClicked;
         public override event Action OnCompleted;
         public event Action<bool> OnStateChanged; 
         
@@ -14,13 +15,14 @@ namespace CodeBase.Gameplay.Mechanics
         private int _completedCount;
         private bool _completed;
         private bool _isOpened;
-        
+
         public void Click()
         {
             if (_completed) return;
             
             _isOpened = !_isOpened;
             OnStateChanged?.Invoke(_isOpened);
+            OnClicked?.Invoke();
         }
 
         public override void ContainsItem(DragableObject dragableObject) => 

@@ -26,13 +26,13 @@ namespace CodeBase.Gameplay.UI
                 _canvas = GetComponent<Canvas>();
         }
 
-        public void ShowResultWindow(int levelIndex)
+        public void ShowResultWindow(bool result)
         {
             _windowObject.gameObject.SetActive(true);
             _windowObject.DOMove(new Vector2(_canvas.pixelRect.width / 2, _canvas.pixelRect.height / 2), 0.4f);
 
-            _winPanel.SetActive(SaveManager.IsCompleted(levelIndex));
-            _losePanel.SetActive(!SaveManager.IsCompleted(levelIndex));
+            _winPanel.SetActive(result);
+            _losePanel.SetActive(!result);
         }
         
         public void _ExitToMenu() => 

@@ -43,8 +43,6 @@ namespace CodeBase.Root
 
         private IEnumerator StartGame()
         {
-            YandexMetrica.Send(Const.StartGameMetricaName);
-            
 /*#if UNITY_EDITOR
             string loadingScene = SceneManager.GetActiveScene().name;
             
@@ -56,7 +54,7 @@ namespace CodeBase.Root
             
             yield return SceneManager.LoadSceneAsync(loadingScene);
             yield break;
-#endif */
+#endif*/ 
             
             _uiRoot.ShowLoadingScreen();
             yield return SceneManager.LoadSceneAsync(SceneNames.BOOT);

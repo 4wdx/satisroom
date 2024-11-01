@@ -1,13 +1,12 @@
 {
-    "idSave": 268,
+    "idSave": 310,
     "isFirstSession": false,
-    "language": "ru",
+    "language": "en",
     "promptDone": false,
     "OpenedLevels": [
         true,
         true,
         true,
-        false,
         true,
         true,
         true,
@@ -15,26 +14,27 @@
         true,
         false,
         false,
-        false,
         true,
-        false
+        true,
+        true,
+        true
     ],
     "CompletedLevels": [
         false,
         true,
-        false,
-        false,
-        true,
-        false,
         true,
         true,
         false,
+        true,
+        true,
         false,
         false,
         false,
         false,
-        false
+        false,
+        true,
+        true
     ],
-    "sfxEnabled": false,
+    "sfxEnabled": true,
     "musicEnabled": true
 }

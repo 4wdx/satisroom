@@ -512,6 +512,7 @@ GameObject:
   - component: {fileID: 7317430130508484238}
   - component: {fileID: 2326585219566711084}
   - component: {fileID: 3432065066870790458}
+  - component: {fileID: 6554615856797560563}
   m_Layer: 7
   m_Name: Cat_Sit
   m_TagString: Untagged
@@ -720,6 +721,22 @@ MonoBehaviour:
   _boxLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &6554615856797560563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414798841568140881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 8300000, guid: d957d08e17c171c4997ed62c90f8987c, type: 3}
 --- !u!1 &433051372979474397
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,6 +980,7 @@ GameObject:
   - component: {fileID: 7963693281953835783}
   - component: {fileID: 6272417246725090455}
   - component: {fileID: 1845363646203265426}
+  - component: {fileID: 5116751053894094013}
   m_Layer: 7
   m_Name: Cat
   m_TagString: Untagged
@@ -1167,6 +1185,22 @@ MonoBehaviour:
   _boxLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &5116751053894094013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704112286657387537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 8300000, guid: d957d08e17c171c4997ed62c90f8987c, type: 3}
 --- !u!1 &714389321244741765
 GameObject:
   m_ObjectHideFlags: 0
@@ -2150,6 +2184,7 @@ GameObject:
   - component: {fileID: 6141475031208110194}
   - component: {fileID: 2447885416984094248}
   - component: {fileID: 4049515107672076101}
+  - component: {fileID: 8637700523160337309}
   m_Layer: 7
   m_Name: Bunny_Stand
   m_TagString: Untagged
@@ -2354,6 +2389,22 @@ MonoBehaviour:
   _boxLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &8637700523160337309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871567807069318609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 8300000, guid: a8183562b73305c459a065ee0b7fbc5a, type: 3}
 --- !u!1 &1904498610588669060
 GameObject:
   m_ObjectHideFlags: 0
@@ -2401,6 +2452,7 @@ GameObject:
   - component: {fileID: 5599571859050902399}
   - component: {fileID: 8476842026322603352}
   - component: {fileID: 4917182050911559606}
+  - component: {fileID: 1102551283841627540}
   m_Layer: 7
   m_Name: Dog_Stand
   m_TagString: Untagged
@@ -2610,6 +2662,22 @@ MonoBehaviour:
   _boxLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &1102551283841627540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928903245625451632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 8300000, guid: 09caf972e6ebebd43a66526461c18736, type: 3}
 --- !u!1 &2001102889321948522
 GameObject:
   m_ObjectHideFlags: 0
@@ -2730,6 +2798,7 @@ GameObject:
   - component: {fileID: 1689269930236206492}
   - component: {fileID: 7743315670518702791}
   - component: {fileID: 605214370574310766}
+  - component: {fileID: 5477536037201151999}
   m_Layer: 7
   m_Name: Ham-cry
   m_TagString: Untagged
@@ -2914,6 +2983,22 @@ MonoBehaviour:
   _endHandle: 0
   _disableHandle: 0
   _sortingOrderDelta: 10
+--- !u!114 &5477536037201151999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096643185824277696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 8300000, guid: 44e58d53af161e44f977f1ec09db745c, type: 3}
 --- !u!1 &2106861897864877588
 GameObject:
   m_ObjectHideFlags: 0
@@ -4130,6 +4215,7 @@ GameObject:
   - component: {fileID: 8678600513877590121}
   - component: {fileID: 7253008632732713316}
   - component: {fileID: 2181213341061415763}
+  - component: {fileID: 3083414240996306462}
   m_Layer: 7
   m_Name: Hams_Sit
   m_TagString: Untagged
@@ -4332,6 +4418,22 @@ MonoBehaviour:
   _boxLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &3083414240996306462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2969324757709552138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 8300000, guid: 44e58d53af161e44f977f1ec09db745c, type: 3}
 --- !u!1 &3003326606216301425
 GameObject:
   m_ObjectHideFlags: 0
@@ -5238,6 +5340,7 @@ GameObject:
   - component: {fileID: 2333536657598695911}
   - component: {fileID: 412840772619911232}
   - component: {fileID: 7135402529681587645}
+  - component: {fileID: 3441995784255414819}
   m_Layer: 7
   m_Name: Hams_Run
   m_TagString: Untagged
@@ -5443,6 +5546,22 @@ MonoBehaviour:
   _boxLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &3441995784255414819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4057349648845728754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 8300000, guid: 44e58d53af161e44f977f1ec09db745c, type: 3}
 --- !u!1 &4063545371730559700
 GameObject:
   m_ObjectHideFlags: 0
@@ -8738,6 +8857,7 @@ GameObject:
   - component: {fileID: 6427257765105704700}
   - component: {fileID: 2065288646667332551}
   - component: {fileID: 2854516805933573400}
+  - component: {fileID: 1360775107116910807}
   m_Layer: 7
   m_Name: Bunny-sit
   m_TagString: Untagged
@@ -8938,6 +9058,22 @@ MonoBehaviour:
   _boxLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &1360775107116910807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6995591582103993563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 8300000, guid: a8183562b73305c459a065ee0b7fbc5a, type: 3}
 --- !u!1 &7136004885045823174
 GameObject:
   m_ObjectHideFlags: 0
@@ -10775,6 +10911,7 @@ GameObject:
   - component: {fileID: 3181881594379718113}
   - component: {fileID: 8818623460066701368}
   - component: {fileID: 4032648720808849407}
+  - component: {fileID: 3500643711563194755}
   m_Layer: 7
   m_Name: Dog_Sit
   m_TagString: Untagged
@@ -10979,6 +11116,22 @@ MonoBehaviour:
   _boxLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &3500643711563194755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8271607434456767559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 8300000, guid: 09caf972e6ebebd43a66526461c18736, type: 3}
 --- !u!1 &8296591931555479225
 GameObject:
   m_ObjectHideFlags: 0
