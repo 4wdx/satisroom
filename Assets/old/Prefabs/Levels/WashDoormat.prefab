@@ -665,7 +665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <LevelIcon>k__BackingField: {fileID: 21300000, guid: 41c4db25bf980464e95583174c0c7fb0, type: 2}
   _level: {fileID: 4757206896074740698}
-  _hint: {fileID: 0}
+  _hint: {fileID: 1207571912154329, guid: 0db0e4d52c4fea84bb47fb0f6034f5db, type: 3}
 --- !u!1 &956984925641792619
 GameObject:
   m_ObjectHideFlags: 0

@@ -89,7 +89,7 @@ namespace CodeBase.Gameplay.Root
 
         private void RewardedAwait(int id)
         {
-            if (id == 99) _hint.SetActive(true); //show if showing rewarded
+            if (id == 99) _uiMediator.OpenHint(_hint); //show if showing rewarded
             
             YandexGame.RewardVideoEvent -= RewardedAwait;
         }

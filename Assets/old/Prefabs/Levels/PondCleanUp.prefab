@@ -250,7 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <LevelIcon>k__BackingField: {fileID: 21300000, guid: 51e0e0161b8704a47a61d7b42b54a155, type: 3}
   _level: {fileID: 2466055364574962574}
-  _hint: {fileID: 0}
+  _hint: {fileID: 1127436686058185, guid: ced6e3c2e3578f646829e1f385ac944a, type: 3}
 --- !u!114 &2466055364574962574
 MonoBehaviour:
   m_ObjectHideFlags: 0

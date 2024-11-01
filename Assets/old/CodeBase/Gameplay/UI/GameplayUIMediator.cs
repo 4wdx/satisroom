@@ -17,6 +17,7 @@ namespace CodeBase.Gameplay.UI
         [SerializeField] private RectTransform _windowObject;
         [SerializeField] private GameObject _winPanel;
         [SerializeField] private GameObject _losePanel;
+        [SerializeField] private Transform _hintParent;
         
         private Canvas _canvas;
         
@@ -49,5 +50,11 @@ namespace CodeBase.Gameplay.UI
 
         public void _ShowHint() => 
             OnShowHint?.Invoke();
+
+        public void OpenHint(GameObject hintPrefab)
+        {
+            GameObject hintObject = Instantiate(hintPrefab, _hintParent, false);
+            _hintParent.gameObject.SetActive(true);
+        }
     }
 }

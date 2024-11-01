@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7090341866189344547}
   - component: {fileID: 1956367472677991843}
   - component: {fileID: 7016126219283044210}
+  - component: {fileID: 1827817430472855794}
   m_Layer: 7
   m_Name: Lipstick-4-cap
   m_TagString: Untagged
@@ -146,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &7090341866189344547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,9 +175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 44.999416}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -200,7 +199,24 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _orderDelta: 10
   _parentSpriteRenderer: {fileID: 3734113015047786351}
+--- !u!114 &1827817430472855794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390558773958247941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &634628497404063229
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +620,7 @@ GameObject:
   - component: {fileID: 2794685440352507009}
   - component: {fileID: 5568291327144155166}
   - component: {fileID: 2542224755293720007}
+  - component: {fileID: 8018608450496869599}
   m_Layer: 7
   m_Name: Smallbrush_3
   m_TagString: Untagged
@@ -735,6 +752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &2794685440352507009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -768,6 +786,7 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
 --- !u!114 &2542224755293720007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -780,15 +799,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 34.196045}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
   _disableScale: {x: 0.91, y: 0.91, z: 0.91}
   _transitDuration: 0.4
   _disableCollider: 1
+--- !u!114 &8018608450496869599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872738588100004289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &916808298723640505
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,6 +1083,7 @@ GameObject:
   - component: {fileID: 8987512344543709010}
   - component: {fileID: 944463458582994903}
   - component: {fileID: 6074549821756945132}
+  - component: {fileID: 8149629402259444038}
   m_Layer: 7
   m_Name: Smallbrush_1
   m_TagString: Untagged
@@ -1182,6 +1215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &8987512344543709010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1215,6 +1249,7 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
 --- !u!114 &6074549821756945132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1227,15 +1262,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 38.439987}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
   _disableScale: {x: 0.91, y: 0.91, z: 0.91}
   _transitDuration: 0.4
   _disableCollider: 1
+--- !u!114 &8149629402259444038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227996627640947391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &1307925367231150908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,6 +1617,7 @@ GameObject:
   - component: {fileID: 3269427757492088837}
   - component: {fileID: 4190623470368816374}
   - component: {fileID: 4399480306013931963}
+  - component: {fileID: 8982800734244636191}
   m_Layer: 7
   m_Name: EyeLash
   m_TagString: Untagged
@@ -1700,6 +1749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &3269427757492088837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1727,9 +1777,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 318.13794}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -1754,6 +1801,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &8982800734244636191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015481391768811606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &2075150288298121325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1769,6 +1833,7 @@ GameObject:
   - component: {fileID: 8321490361673100076}
   - component: {fileID: 5884968898759152025}
   - component: {fileID: 4138725127332195673}
+  - component: {fileID: 4000157706903427018}
   m_Layer: 7
   m_Name: Balm_2
   m_TagString: Untagged
@@ -1900,6 +1965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &8321490361673100076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1918,6 +1984,7 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
 --- !u!114 &5884968898759152025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1945,15 +2012,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 308.1268}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
   _disableScale: {x: 1, y: 1, z: 1}
   _transitDuration: 0.4
   _disableCollider: 1
+--- !u!114 &4000157706903427018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075150288298121325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &2118722947825272196
 GameObject:
   m_ObjectHideFlags: 0
@@ -2234,6 +2314,7 @@ GameObject:
   - component: {fileID: 795585961034594777}
   - component: {fileID: 3290326485254944697}
   - component: {fileID: 5304262083933786281}
+  - component: {fileID: 514150790137160802}
   m_Layer: 7
   m_Name: Lipstick-3-cap
   m_TagString: Untagged
@@ -2365,6 +2446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &795585961034594777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2392,9 +2474,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 61.874123}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -2419,7 +2498,24 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _orderDelta: 10
   _parentSpriteRenderer: {fileID: 101512336887446217}
+--- !u!114 &514150790137160802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2390344774515457724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &2470986151494446842
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,6 +2531,7 @@ GameObject:
   - component: {fileID: 763532510889600788}
   - component: {fileID: 6874553303498118521}
   - component: {fileID: 3661022456849788941}
+  - component: {fileID: 1094595317853236506}
   m_Layer: 7
   m_Name: Square_3
   m_TagString: Untagged
@@ -2566,6 +2663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &763532510889600788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2593,9 +2691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 317.76453}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -2620,6 +2715,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &1094595317853236506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2470986151494446842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &2510399887100048595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2856,6 +2968,7 @@ GameObject:
   - component: {fileID: 3441535763939010586}
   - component: {fileID: 2476659165512830269}
   - component: {fileID: 2825053183953159651}
+  - component: {fileID: 1299418817036485399}
   m_Layer: 7
   m_Name: EyelashCurler
   m_TagString: Untagged
@@ -2987,6 +3100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &3441535763939010586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3014,9 +3128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 306.09784}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -3041,6 +3152,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &1299418817036485399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2786108566923173629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &2922801535690823403
 GameObject:
   m_ObjectHideFlags: 0
@@ -3056,6 +3184,7 @@ GameObject:
   - component: {fileID: 5460421492377040979}
   - component: {fileID: 3952407856185888170}
   - component: {fileID: 5933789023779024789}
+  - component: {fileID: 8859485343407296683}
   m_Layer: 7
   m_Name: Perfume
   m_TagString: Untagged
@@ -3187,6 +3316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &5460421492377040979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3214,9 +3344,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 319.94186}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -3241,6 +3368,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &8859485343407296683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2922801535690823403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &3031197388071683331
 GameObject:
   m_ObjectHideFlags: 0
@@ -3337,9 +3481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525cfe59857a476f862316af33cefbe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dragableLayer:
-    serializedVersion: 2
-    m_Bits: 128
+  _layerPriorityOrder: []
 --- !u!1 &3058600189891724808
 GameObject:
   m_ObjectHideFlags: 0
@@ -3477,6 +3619,7 @@ GameObject:
   - component: {fileID: 1511819696342517857}
   - component: {fileID: 682726717479238026}
   - component: {fileID: 6787998701724448573}
+  - component: {fileID: 2576412225400478132}
   m_Layer: 7
   m_Name: Lipstick-1
   m_TagString: Untagged
@@ -3609,6 +3752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &1511819696342517857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3636,9 +3780,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 308.57205}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -3663,6 +3804,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &2576412225400478132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3160057636182395139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &3198547399576193458
 GameObject:
   m_ObjectHideFlags: 0
@@ -3678,6 +3836,7 @@ GameObject:
   - component: {fileID: 7578741780484002957}
   - component: {fileID: 4592277445692148006}
   - component: {fileID: 424418229741430636}
+  - component: {fileID: 2779851682865469710}
   m_Layer: 7
   m_Name: BigBrush_1
   m_TagString: Untagged
@@ -3809,6 +3968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &7578741780484002957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3836,9 +3996,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 295.31158}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -3863,6 +4020,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &2779851682865469710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3198547399576193458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &3319769570356702678
 GameObject:
   m_ObjectHideFlags: 0
@@ -3944,6 +4118,7 @@ GameObject:
   - component: {fileID: 2566672725295609180}
   - component: {fileID: 8487386909564557737}
   - component: {fileID: 4725590183222944007}
+  - component: {fileID: 3777454546399910698}
   m_Layer: 7
   m_Name: Flatbrush
   m_TagString: Untagged
@@ -4075,6 +4250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &2566672725295609180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4102,9 +4278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 63.3832}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -4129,6 +4302,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &3777454546399910698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3451655679632101252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &3667820656468710601
 GameObject:
   m_ObjectHideFlags: 0
@@ -4410,6 +4600,7 @@ GameObject:
   - component: {fileID: 2464132142275319058}
   - component: {fileID: 3640551015669698023}
   - component: {fileID: 825771617557489488}
+  - component: {fileID: 3994225704947222208}
   m_Layer: 7
   m_Name: Cream
   m_TagString: Untagged
@@ -4541,6 +4732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &2464132142275319058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4568,9 +4760,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 37.52579}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -4595,6 +4784,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &3994225704947222208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3950026328845803472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &4000128000590457050
 GameObject:
   m_ObjectHideFlags: 0
@@ -4610,6 +4816,7 @@ GameObject:
   - component: {fileID: 8150396591301684559}
   - component: {fileID: 2236612072885203558}
   - component: {fileID: 1843429999243187897}
+  - component: {fileID: 3227208519433737028}
   m_Layer: 7
   m_Name: Lipstick-2
   m_TagString: Untagged
@@ -4742,6 +4949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &8150396591301684559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4769,9 +4977,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 282.86606}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -4796,6 +5001,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &3227208519433737028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4000128000590457050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &4002694726989551378
 GameObject:
   m_ObjectHideFlags: 0
@@ -4811,6 +5033,7 @@ GameObject:
   - component: {fileID: 4222200587446426959}
   - component: {fileID: 1791034506097979317}
   - component: {fileID: 2605193767737670339}
+  - component: {fileID: 8726776156202778232}
   m_Layer: 7
   m_Name: Lipstick-4
   m_TagString: Untagged
@@ -4943,6 +5166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &4222200587446426959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4970,9 +5194,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 321.48102}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -4997,6 +5218,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &8726776156202778232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4002694726989551378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &4018692495433239128
 GameObject:
   m_ObjectHideFlags: 0
@@ -5043,6 +5281,7 @@ GameObject:
   - component: {fileID: 7428912533320274413}
   - component: {fileID: 7433113540522038583}
   - component: {fileID: 6641483866972895218}
+  - component: {fileID: 8256658765739729678}
   m_Layer: 7
   m_Name: Facescrub
   m_TagString: Untagged
@@ -5174,6 +5413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &7428912533320274413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5192,6 +5432,7 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
 --- !u!114 &7433113540522038583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5219,15 +5460,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 309.97144}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
   _disableScale: {x: 1, y: 1, z: 1}
   _transitDuration: 0.4
   _disableCollider: 1
+--- !u!114 &8256658765739729678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4482497874004175783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &4534643655347762180
 GameObject:
   m_ObjectHideFlags: 0
@@ -5243,6 +5497,7 @@ GameObject:
   - component: {fileID: 4476252155064755357}
   - component: {fileID: 2246127918488049391}
   - component: {fileID: 3889927986810688522}
+  - component: {fileID: 4130569320721248443}
   m_Layer: 7
   m_Name: Flatbrush (2)
   m_TagString: Untagged
@@ -5374,6 +5629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &4476252155064755357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5401,9 +5657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 298.78427}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -5428,6 +5681,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &4130569320721248443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4534643655347762180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &4546891555600216079
 GameObject:
   m_ObjectHideFlags: 0
@@ -5474,6 +5744,7 @@ GameObject:
   - component: {fileID: 8051666284554159282}
   - component: {fileID: 8483587422160021617}
   - component: {fileID: 850850423157516567}
+  - component: {fileID: 8989536869854907199}
   m_Layer: 7
   m_Name: Lipstick-2-cap
   m_TagString: Untagged
@@ -5605,6 +5876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &8051666284554159282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5632,9 +5904,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 72.95836}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -5659,7 +5928,24 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _orderDelta: 10
   _parentSpriteRenderer: {fileID: 7164944049286124905}
+--- !u!114 &8989536869854907199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4635954456561776357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &4636723265108491445
 GameObject:
   m_ObjectHideFlags: 0
@@ -5675,6 +5961,7 @@ GameObject:
   - component: {fileID: 405711240575966903}
   - component: {fileID: 7174036425081634887}
   - component: {fileID: 8942537527631229906}
+  - component: {fileID: 2182837435749341833}
   m_Layer: 7
   m_Name: Mask
   m_TagString: Untagged
@@ -5806,6 +6093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &405711240575966903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5833,9 +6121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 57.355755}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -5860,6 +6145,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &2182837435749341833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4636723265108491445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &4701221777325453251
 GameObject:
   m_ObjectHideFlags: 0
@@ -6078,6 +6380,7 @@ GameObject:
   - component: {fileID: 8702789475508887186}
   - component: {fileID: 6013238092604588854}
   - component: {fileID: 5126907754077207176}
+  - component: {fileID: 4188618912738266326}
   m_Layer: 7
   m_Name: Balm_1
   m_TagString: Untagged
@@ -6209,6 +6512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &8702789475508887186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6227,6 +6531,7 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
 --- !u!114 &6013238092604588854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6254,15 +6559,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 50.514397}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
   _disableScale: {x: 1, y: 1, z: 1}
   _transitDuration: 0.4
   _disableCollider: 1
+--- !u!114 &4188618912738266326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5358852749965312958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &5648884560120040431
 GameObject:
   m_ObjectHideFlags: 0
@@ -6278,6 +6596,7 @@ GameObject:
   - component: {fileID: 5513541350052655754}
   - component: {fileID: 3701381185261368231}
   - component: {fileID: 3025445439268186511}
+  - component: {fileID: 4804414230150230663}
   m_Layer: 7
   m_Name: Eyeshadow
   m_TagString: Untagged
@@ -6410,6 +6729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &5513541350052655754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6437,9 +6757,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 32.540287}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -6464,6 +6781,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &4804414230150230663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5648884560120040431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &6014411118488863482
 GameObject:
   m_ObjectHideFlags: 0
@@ -6642,7 +6976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <LevelIcon>k__BackingField: {fileID: 21300000, guid: 0c59c48656022494b890a5bc307da245, type: 3}
   _level: {fileID: 9146054318100211270}
-  _hint: {fileID: 0}
+  _hint: {fileID: 1188410899268981, guid: 68bf3c61eddd51242afba9bbb30f6d83, type: 3}
 --- !u!1 &6460324835732524220
 GameObject:
   m_ObjectHideFlags: 0
@@ -6658,6 +6992,7 @@ GameObject:
   - component: {fileID: 8763216457506193597}
   - component: {fileID: 3108186549318580000}
   - component: {fileID: 5718820122576073636}
+  - component: {fileID: 2725967872298262304}
   m_Layer: 7
   m_Name: BigBrush_3
   m_TagString: Untagged
@@ -6789,6 +7124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &8763216457506193597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6816,9 +7152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 104.55026}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -6843,6 +7176,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &2725967872298262304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6460324835732524220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &6525391448667441133
 GameObject:
   m_ObjectHideFlags: 0
@@ -6949,6 +7299,7 @@ GameObject:
   - component: {fileID: 5228636419007477160}
   - component: {fileID: 3108777817397198732}
   - component: {fileID: 1440845890139626541}
+  - component: {fileID: 3622202069827862327}
   m_Layer: 7
   m_Name: Lipstick-1-cap
   m_TagString: Untagged
@@ -7080,6 +7431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &5228636419007477160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7107,9 +7459,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 54.41111}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -7134,7 +7483,24 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _orderDelta: 10
   _parentSpriteRenderer: {fileID: 409522168744466969}
+--- !u!114 &3622202069827862327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6612335260222324226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &7006072041026488754
 GameObject:
   m_ObjectHideFlags: 0
@@ -7212,6 +7578,7 @@ GameObject:
   - component: {fileID: 4721606650517489119}
   - component: {fileID: 2703495400657991693}
   - component: {fileID: 3876978506284771698}
+  - component: {fileID: 7124568866527307137}
   m_Layer: 7
   m_Name: Smallbrush_4
   m_TagString: Untagged
@@ -7343,6 +7710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &4721606650517489119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7376,6 +7744,7 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
 --- !u!114 &3876978506284771698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7388,15 +7757,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 311.2888}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
   _disableScale: {x: 0.91, y: 0.91, z: 0.91}
   _transitDuration: 0.4
   _disableCollider: 1
+--- !u!114 &7124568866527307137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7218766777718041837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &7286025681853336060
 GameObject:
   m_ObjectHideFlags: 0
@@ -7451,6 +7833,7 @@ GameObject:
   - component: {fileID: 5131171125143821454}
   - component: {fileID: 2006897315998253382}
   - component: {fileID: 4592340255200148084}
+  - component: {fileID: 8496100479784833237}
   m_Layer: 7
   m_Name: Powder boxes-cream
   m_TagString: Untagged
@@ -7582,6 +7965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &5131171125143821454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7600,6 +7984,7 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
 --- !u!114 &2006897315998253382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7627,15 +8012,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 318.48743}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
   _disableScale: {x: 0, y: 0, z: 0}
   _transitDuration: 0.25
   _disableCollider: 1
+--- !u!114 &8496100479784833237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7555488155623029086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &7564709101166442759
 GameObject:
   m_ObjectHideFlags: 0
@@ -7742,6 +8140,7 @@ GameObject:
   - component: {fileID: 2318535319312035291}
   - component: {fileID: 4545323603858148224}
   - component: {fileID: 392081536133756372}
+  - component: {fileID: 4578385040754447900}
   m_Layer: 7
   m_Name: Square_2
   m_TagString: Untagged
@@ -7873,6 +8272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &2318535319312035291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7900,9 +8300,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 37.012936}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -7927,6 +8324,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &4578385040754447900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7660263470483762343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &7702869554629119167
 GameObject:
   m_ObjectHideFlags: 0
@@ -8079,6 +8493,7 @@ GameObject:
   - component: {fileID: 8635645903686474963}
   - component: {fileID: 8042417294882417994}
   - component: {fileID: 298021045284237404}
+  - component: {fileID: 4908324653407624370}
   m_Layer: 7
   m_Name: Lipstick-3
   m_TagString: Untagged
@@ -8211,6 +8626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &8635645903686474963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8238,9 +8654,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 290.03455}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -8265,6 +8678,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &4908324653407624370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7793446627729214975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &7816400473214139745
 GameObject:
   m_ObjectHideFlags: 0
@@ -8280,6 +8710,7 @@ GameObject:
   - component: {fileID: 1109493546862584573}
   - component: {fileID: 4745042542304236033}
   - component: {fileID: 4190798852297674158}
+  - component: {fileID: 3340010678421038823}
   m_Layer: 7
   m_Name: Eyeshadow_Pen
   m_TagString: Untagged
@@ -8411,6 +8842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &1109493546862584573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8438,9 +8870,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 272.72903}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -8465,7 +8894,24 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _orderDelta: 10
   _parentSpriteRenderer: {fileID: 7233406459612032009}
+--- !u!114 &3340010678421038823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7816400473214139745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &7981337817144958713
 GameObject:
   m_ObjectHideFlags: 0
@@ -8512,6 +8958,7 @@ GameObject:
   - component: {fileID: 8598462221400209492}
   - component: {fileID: 1983961621054232205}
   - component: {fileID: 6896923019177781003}
+  - component: {fileID: 4213555232111785479}
   m_Layer: 7
   m_Name: Smallbrush_2
   m_TagString: Untagged
@@ -8643,6 +9090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &8598462221400209492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8676,6 +9124,7 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
 --- !u!114 &6896923019177781003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8688,15 +9137,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 278.88074}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
   _disableScale: {x: 0.91, y: 0.91, z: 0.91}
   _transitDuration: 0.4
   _disableCollider: 1
+--- !u!114 &4213555232111785479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8041372154795529371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &8118252926299476903
 GameObject:
   m_ObjectHideFlags: 0
@@ -8743,6 +9205,7 @@ GameObject:
   - component: {fileID: 6378823161643160982}
   - component: {fileID: 5310432072702312272}
   - component: {fileID: 8656609489014813696}
+  - component: {fileID: 1597410686154566647}
   m_Layer: 7
   m_Name: Square_1
   m_TagString: Untagged
@@ -8874,6 +9337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &6378823161643160982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8901,9 +9365,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 320.15854}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -8928,6 +9389,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &1597410686154566647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8244659580959476274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &8398619040762448176
 GameObject:
   m_ObjectHideFlags: 0
@@ -8943,6 +9421,7 @@ GameObject:
   - component: {fileID: 8555757585260165063}
   - component: {fileID: 1211856156391274238}
   - component: {fileID: 9221180150547431754}
+  - component: {fileID: 3924240727468179099}
   m_Layer: 7
   m_Name: Mascara
   m_TagString: Untagged
@@ -9074,6 +9553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &8555757585260165063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9101,9 +9581,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: 0, z: 313.86884}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -9128,6 +9605,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &3924240727468179099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8398619040762448176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &8458270313420851542
 GameObject:
   m_ObjectHideFlags: 0
@@ -9265,6 +9759,7 @@ GameObject:
   - component: {fileID: 7794954851628306148}
   - component: {fileID: 8825296239682189524}
   - component: {fileID: 7926651637101533408}
+  - component: {fileID: 6795888427592788793}
   m_Layer: 7
   m_Name: Glasses
   m_TagString: Untagged
@@ -9396,6 +9891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &7794954851628306148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9423,9 +9919,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 46.70578}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -9450,6 +9943,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &6795888427592788793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8787712438209618305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &8863756134999969132
 GameObject:
   m_ObjectHideFlags: 0
@@ -9649,6 +10159,7 @@ GameObject:
   - component: {fileID: 3090202128740359018}
   - component: {fileID: 4385812750047719869}
   - component: {fileID: 3996447545558537361}
+  - component: {fileID: 3592981782643731885}
   m_Layer: 7
   m_Name: Concealer
   m_TagString: Untagged
@@ -9780,6 +10291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &3090202128740359018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9807,9 +10319,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 44.961334}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -9834,6 +10343,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &3592981782643731885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8951356859603171660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &8956792244529250369
 GameObject:
   m_ObjectHideFlags: 0
@@ -9849,6 +10375,7 @@ GameObject:
   - component: {fileID: 6038368450461934866}
   - component: {fileID: 5055350808337432451}
   - component: {fileID: 3374560455700014375}
+  - component: {fileID: 6220570134498420006}
   m_Layer: 7
   m_Name: BigBrush_2
   m_TagString: Untagged
@@ -9980,6 +10507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &6038368450461934866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10007,9 +10535,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 35.562183}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.075, y: 1.075, z: 1.075}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -10034,6 +10559,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &6220570134498420006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8956792244529250369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &8966846782045062166
 GameObject:
   m_ObjectHideFlags: 0
@@ -10238,6 +10780,7 @@ GameObject:
   - component: {fileID: 6314970055130197437}
   - component: {fileID: 7028137570651320037}
   - component: {fileID: 1076092560604882526}
+  - component: {fileID: 9015569975793473808}
   m_Layer: 7
   m_Name: Square_4
   m_TagString: Untagged
@@ -10369,6 +10912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beacd4a0917a43f18f6a48107167abef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateProvider: {fileID: 0}
 --- !u!114 &6314970055130197437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10396,9 +10940,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2702a05273413ba63a2a467522d0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseRotation: {x: -0, y: -0, z: 42.149574}
-  _baseScale: {x: 1, y: 1, z: 1}
-  _autoSet: 1
   _targetRotation: {x: 0, y: 0, z: 0}
   _targetScale: {x: 1.1, y: 1.1, z: 1.1}
   _disableRotation: {x: 0, y: 0, z: 0}
@@ -10423,6 +10964,23 @@ MonoBehaviour:
   _startHandle: 0
   _endHandle: 0
   _disableHandle: 0
+  _sortingOrderDelta: 10
+--- !u!114 &9015569975793473808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9151194706612464781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74f97dae36140ab833bb8cd3edc089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStartDragSound: {fileID: 0}
+  _dragSound: {fileID: 0}
+  _onEndDragSound: {fileID: 0}
+  _onDisableSound: {fileID: 0}
 --- !u!1 &9203527209241726795
 GameObject:
   m_ObjectHideFlags: 0

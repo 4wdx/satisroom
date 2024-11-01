@@ -10149,7 +10149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <LevelIcon>k__BackingField: {fileID: 21300000, guid: ce251cd9c02fd924ab1f23a96c402c9f, type: 3}
   _level: {fileID: 407888506028531431}
-  _hint: {fileID: 0}
+  _hint: {fileID: 1954034562875995, guid: 7df8532dbfdb9f14f8219d1ac70c9867, type: 3}
 --- !u!1 &7691111407628384032
 GameObject:
   m_ObjectHideFlags: 0
