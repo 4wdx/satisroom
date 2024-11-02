@@ -520,6 +520,7 @@ GameObject:
   - component: {fileID: 6952265415310761047}
   - component: {fileID: 1941426189717935622}
   - component: {fileID: 6972472593155386570}
+  - component: {fileID: 9009385930324634767}
   m_Layer: 5
   m_Name: TelegramButton
   m_TagString: Untagged
@@ -650,6 +651,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f0d2a5760d042fa84a3b8dcae502fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9009385930324634767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324846793741833526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5f83023ccd4421a5b9d0d9f8817c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1718200989117994694
@@ -1453,6 +1466,7 @@ GameObject:
   - component: {fileID: 2186501867485762961}
   - component: {fileID: 890379926756820352}
   - component: {fileID: 3414333909216634361}
+  - component: {fileID: 2283863172428540068}
   m_Layer: 5
   m_Name: HintButton
   m_TagString: Untagged
@@ -1574,6 +1588,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &2283863172428540068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3020737525162411227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5f83023ccd4421a5b9d0d9f8817c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3021998111319808498
 GameObject:
   m_ObjectHideFlags: 0
@@ -3955,6 +3981,7 @@ GameObject:
   - component: {fileID: 6034263697898140852}
   - component: {fileID: 2858890118910363344}
   - component: {fileID: 2778048476518099311}
+  - component: {fileID: 5136833172443579149}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -4075,6 +4102,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &5136833172443579149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8680437528931857292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5f83023ccd4421a5b9d0d9f8817c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8758398199681366106
 GameObject:
   m_ObjectHideFlags: 0
@@ -4195,22 +4234,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2938692268816810957}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8758398199681366106}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 3433603722763007692}
+        m_TargetAssemblyTypeName: CodeBase.Gameplay.UI.GameplayUIMediator, Assembly-CSharp
+        m_MethodName: _CloseHint
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

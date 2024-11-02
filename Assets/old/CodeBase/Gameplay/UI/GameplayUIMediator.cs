@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using CodeBase.Gameplay.Mechanics;
 using CodeBase.Gameplay.Root;
 using CodeBase.Root;
 using UnityEngine;
@@ -57,6 +58,14 @@ namespace CodeBase.Gameplay.UI
             GameObject hintObject = Instantiate(hintPrefab, _hintParent, false);
             _hintParent.gameObject.SetActive(true);
             _hintCross.gameObject.SetActive(true);
+            DragHandler.Instance.Disable();
+        }
+
+        public void _CloseHint()
+        {
+            _hintParent.gameObject.SetActive(false);
+            _hintCross.gameObject.SetActive(false);
+            DragHandler.Instance.Enable();
         }
     }
 }

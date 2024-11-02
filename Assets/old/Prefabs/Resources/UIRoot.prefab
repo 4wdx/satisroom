@@ -811,6 +811,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _layerPriorityOrder:
   - serializedVersion: 2
+    m_Bits: 32
+  - serializedVersion: 2
     m_Bits: 512
   - serializedVersion: 2
     m_Bits: 128
