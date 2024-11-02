@@ -20,7 +20,9 @@ namespace YG
         // Вы можете выполнить какие то действия при загрузке сохранений
         public SavesYG()
         {
-            OpenedLevels[1] = true;
+            OpenedLevels[0] = true;
+            sfxEnabled = true;
+            musicEnabled = true;
         }
     }
 }
