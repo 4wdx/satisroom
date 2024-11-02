@@ -1,6 +1,4 @@
-﻿using System;
-using Sirenix.OdinInspector.Editor;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace CodeBase.Gameplay.Mechanics
 {
