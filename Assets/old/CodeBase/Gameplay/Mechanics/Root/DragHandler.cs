@@ -52,6 +52,7 @@ namespace CodeBase.Gameplay.Mechanics
         {
             if (_dragableObject == null) return;
             
+            _dragableObject.EndDrag();
             _dragableObject = null;
         }
 
