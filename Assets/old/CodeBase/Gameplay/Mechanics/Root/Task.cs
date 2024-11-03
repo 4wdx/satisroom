@@ -33,10 +33,10 @@ namespace CodeBase.Gameplay.Mechanics
 
         protected void StopTask()
         {
-            DragHandler.Instance.CancelDrag();
+            if (IsActive == false) return;
             
-            print("stop task");
             IsActive = false;
+            DragHandler.Instance.CancelDrag();
             OnComplete?.Invoke();
         }
     }
