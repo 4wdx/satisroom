@@ -6,14 +6,14 @@ namespace CodeBase.MainMenu.Root
     public class MainMenuMediator : MonoBehaviour
     {
         private MainMenuExitInvoker _mainMenuExitInvoker;
-        private ButtonHandler _buttonHandler;
+        private PageHandler _pageHandler;
         private TikTokFeed _tikTokFeed;
      
         
-        public void Initialize(MainMenuExitInvoker mainMenuExitInvoker, TikTokFeed tikTokFeed, ButtonHandler buttonHandler)
+        public void Initialize(MainMenuExitInvoker mainMenuExitInvoker, TikTokFeed tikTokFeed, PageHandler pageHandler)
         {
             _mainMenuExitInvoker = mainMenuExitInvoker;
-            _buttonHandler = buttonHandler;
+            _pageHandler = pageHandler;
             _tikTokFeed = tikTokFeed;
         }
 
@@ -27,6 +27,6 @@ namespace CodeBase.MainMenu.Root
             _mainMenuExitInvoker.Invoke(targetLevel);
 
         public void ReconstructButtons() => 
-            _buttonHandler.ReconstructButtons();
+            _pageHandler.ReconstructPages();
     }
 }

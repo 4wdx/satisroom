@@ -1,8 +1,7 @@
-using System;
 using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine;
-using YG;
+using UnityEngine.Serialization;
 
 namespace CodeBase.MainMenu
 {
@@ -12,7 +11,7 @@ namespace CodeBase.MainMenu
         [SerializeField] private float _cancelSpeed;
         [SerializeField] private float _swipeSpeed;
         [SerializeField] private Canvas _rootCanvas;
-        [SerializeField] private ButtonHandler _buttonHandler;
+        [FormerlySerializedAs("_buttonHandler")] [SerializeField] private PageHandler _pageHandler;
 
         [SerializeField] private RectTransform _topPage;
         [SerializeField] private RectTransform _botPage;
@@ -101,9 +100,9 @@ namespace CodeBase.MainMenu
             _rectTransform.anchoredPosition = _startDragPosition;
             
             if (direction)
-                _buttonHandler.NextPage();
+                _pageHandler.NextPage();
             else 
-                _buttonHandler.PreviousPage();
+                _pageHandler.PreviousPage();
             
             _automoving = false;
         }
