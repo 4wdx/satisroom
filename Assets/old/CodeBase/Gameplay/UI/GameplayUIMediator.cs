@@ -1,11 +1,8 @@
 using System;
-using System.Collections.Generic;
 using CodeBase.Gameplay.Mechanics;
 using CodeBase.Gameplay.Root;
-using CodeBase.Root;
 using UnityEngine;
 using DG.Tweening;
-using TMPro;
 
 namespace CodeBase.Gameplay.UI
 {

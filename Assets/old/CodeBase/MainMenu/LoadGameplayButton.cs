@@ -56,7 +56,7 @@ namespace CodeBase.MainMenu
             data.Add(Const.OpenLevelMetricaName, _levelIndex.ToString());
             YandexMetrica.Send(Const.OpenLevelMetricaName, data);
             
-            _mainMenuMediator.ReconstructButtons();
+            _mainMenuMediator.StartGameplay(_levelIndex);
             YandexGame.RewardVideoEvent -= RewardedAwait;
         }
     }

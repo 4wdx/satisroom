@@ -54,7 +54,7 @@ namespace CodeBase.Root
             
             yield return SceneManager.LoadSceneAsync(loadingScene);
             yield break;
-#endif*/ 
+#endif */
             
             _uiRoot.ShowLoadingScreen();
             yield return SceneManager.LoadSceneAsync(SceneNames.BOOT);

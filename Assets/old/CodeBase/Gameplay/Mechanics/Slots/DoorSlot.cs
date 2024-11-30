@@ -29,8 +29,8 @@ namespace CodeBase.Gameplay.Mechanics
                 _linkedItem.transform.parent = transform;
                 _linkedItem.transform.localPosition = Vector2.zero;
 
-                yield return new WaitUntil(() => _blockingDoor.Opened == false);
-                print("completed door");
+                /*yield return new WaitUntil(() => _blockingDoor.Opened == false);
+                print("completed door");*/
                 OnCompleted?.Invoke();
             }
         }
