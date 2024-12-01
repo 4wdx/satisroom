@@ -13,7 +13,7 @@ namespace CodeBase.MainMenu
 
         private void Start()
         {
-            _currentUpIndex += 1000000;
+            _currentUpIndex += 0;
 
             for (int i = 0; i < _upPages.Length; i++)
             {

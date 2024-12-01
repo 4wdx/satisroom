@@ -202,6 +202,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Become Gentleman
       objectReference: {fileID: 0}
+    - target: {fileID: 3682493571357907020, guid: 5fbc8c0911df0de49ae507a19332e475, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 5230543664827840793, guid: 5fbc8c0911df0de49ae507a19332e475, type: 3}
+      propertyPath: orthographic size
+      value: 11.28
+      objectReference: {fileID: 0}
     - target: {fileID: 7478755286997296275, guid: 5fbc8c0911df0de49ae507a19332e475, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3537903
